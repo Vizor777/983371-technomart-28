@@ -7,11 +7,11 @@
 <body>
   <header>
     <section>
-      <a href="#"><img src="img/logo.svg" alt="логотип магазина"></a>
+      <a href="#"><img src="img/logo.svg" alt="Логотип магазина Техномарт"></a>
       <h2 class="visually-hidden">Панель пользователя</h2>
       <form action="https://echo.htmlacademy.ru" method="post">
-        <label>
-          <input type="search" name="search" placeholder="Поиск">
+        <label for="search" id="search">
+          <input type="search" name="search" id="search"  placeholder="Поиск"  aria-labelledby="search">
         </label>
       </form>
       <a href="blank.html">Закладки</a>
@@ -30,11 +30,11 @@
         <button type="button">Войти</button>
         <button type="button">Регистрация</button>
         <a href="blank.html">
-          <img src="img/icon_user.png" alt="иконка пользователя">
+          <img src="img/icon_user.png" alt="Иконка-кнопка личного кабинета пользователя">
           Равшан Джамшутович
         </a>
-        <a href="">
-          <img src="img/icon_logout.png" alt="кнопка выхода">
+        <a href="blank.html">
+          <img src="img/icon_logout.png" alt="Иконка-кнопка для выхода из личного кабинета">
         </a>
         <a href="blank.html">Мои заказы</a>
         <a href="blank.html">Личный кабинет</a>
@@ -70,13 +70,13 @@
         <form action="https://echo.htmlacademy.ru/" method="post">
           <fieldset>
             <legend>Цена</legend>
-            <label class="visually-hidden">
-              От:
-              <input type="text" name="price_min"></input> <!--цена мин-->
+            <label >
+              <p class="visually-hidden">От:</p>
+              <input type="text" name="price_min" aria-label="Цена минимальная"></input> <!--цена мин-->
             </label>
-            <label class="visually-hidden">
-              До:
-              <input type="text" name="price_max"></input>   <!--цена макс-->
+            <label >
+              <p class="visually-hidden">До:</p> 
+              <input type="text" name="price_max" aria-label="Цена максимальная"></input>   <!--цена макс-->
             </label>
             <div></div> <!--Ползунок цены-->
           </fieldset>
@@ -140,80 +140,98 @@
       <p>По цене</p>
       <p>По типу</p>
       <p>По функционалу</p>
-      <button class="visually-hidden">up</button>
-      <button class="visually-hidden">down</button>
+      <button type="button" aria-label="Кнопка сортировки вверх">up</button>
+      <button type="button" aria-label="Кнопка сортировки вниз" >down</button>
     </section>
     <section>
       <h2>Карточки товаров</h2>
         <article>
           <h3 class="visually-hidden">Перфоратор Bosch bfg 6000</h3>
           <img src="img\bosch_6000.jpg" alt="фото инструмента">
-          <button class="visually-hidden">Купить</button>
-          <button class="visually-hidden">В закладки</button>
+          <div>
+            <button>Купить</button>
+            <button>В закладки</button>
+          </div>
           <p>30500 Р.</p>
           <p>25500 Р.</p>
         </article>
         <article>
           <h3>Перфоратор Bosch bfg 6000</h3>
           <img src="img\bosch_6000.jpg" alt="фото инструмента">
-          <button class="visually-hidden">Купить</button>
-          <button class="visually-hidden">В закладки</button>
+          <div>
+            <button>Купить</button>
+            <button>В закладки</button>
+          </div>
           <p>30500 Р.</p>
           <p>25500 Р.</p>
         </article>
         <article>
           <h3>Перфоратор Bosch bfg 6000</h3>
           <img src="img\bosch_6000.jpg" alt="фото инструмента">
-          <button class="visually-hidden">Купить</button>
-          <button class="visually-hidden">В закладки</button>
+          <div>
+            <button>Купить</button>
+            <button>В закладки</button>
+          </div>
           <p>30500 Р.</p>
           <p>25500 Р.</p>
         </article>
         <article>
           <h3>Перфоратор Bosch bfg 3000</h3>
           <img src="img\bosch_3000.jpg" alt="фото инструмента">
-          <button class="visually-hidden">Купить</button>
-          <button class="visually-hidden">В закладки</button>
+          <div>
+            <button>Купить</button>
+            <button>В закладки</button>
+          </div>
           <p>22500 Р.</p>
           <p>15500 Р.</p>
         </article>
         <article>
           <h3>Перфоратор Bosch bfg 6000</h3>
           <img src="img\bosch_6000.jpg" alt="фото инструмента">
-          <button class="visually-hidden">Купить</button>
-          <button class="visually-hidden">В закладки</button>
+          <div>
+            <button>Купить</button>
+            <button>В закладки</button>
+          </div>
           <p>30500 Р.</p>
           <p>25500 Р.</p>
         </article>
         <article>
           <h3>Перфоратор Bosch bfg 2000</h3>
           <img src="img\bosch_2000.jpg" alt="фото инструмента">
-          <button class="visually-hidden">Купить</button>
-          <button class="visually-hidden">В закладки</button>
+          <div>
+            <button>Купить</button>
+            <button>В закладки</button>
+          </div>
           <p>30500 Р.</p>
           <p>12500 Р.</p>
         </article>
         <article>
           <h3>Перфоратор Bosch bfg 3000</h3>
           <img src="img\bosch_3000.jpg" alt="фото инструмента">
-          <button class="visually-hidden">Купить</button>
-          <button class="visually-hidden">В закладки</button>
+          <div>
+            <button>Купить</button>
+            <button>В закладки</button>
+          </div>
           <p>22500 Р.</p>
           <p>15500 Р.</p>
         </article>
         <article>
           <h3>Перфоратор Bosch bfg 6000</h3>
           <img src="img\bosch_6000.jpg" alt="фото инструмента">
-          <button class="visually-hidden">Купить</button>
-          <button class="visually-hidden">В закладки</button>
+          <div>
+            <button>Купить</button>
+            <button>В закладки</button>
+          </div>
           <p>30500 Р.</p>
           <p>25500 Р.</p>
         </article>
         <article>
           <h3>Перфоратор Bosch bfg 2000</h3>
           <img src="img\bosch_2000.jpg" alt="фото инструмента">
-          <button class="visually-hidden">Купить</button>
-          <button class="visually-hidden">В закладки</button>
+          <div>
+            <button>Купить</button>
+            <button>В закладки</button>
+          </div>
           <p>30500 Р.</p>
           <p>12500 Р.</p>
         </article>
@@ -223,7 +241,7 @@
       <p>Товар добавлен в корзину!</p>
       <a href="blank.html">Оформить заказ</a>
       <button type="button">Продолжить покупки</button>
-      <button class="visually-hidden" type="button">Закрыть</button>
+      <button type="button" aria-label="Закрыть окно корзины">Закрыть</button>
     </section>
     <section>
       <h2 class="visually-hidden">Навигация по страницам</h2>
@@ -242,7 +260,7 @@
     </section>
   </main>
   <footer>
-    <a href="#"><img src="img/logo_footer.svg" alt="логотип магазина"></a>
+    <a href="#"><img src="img/logo_footer.svg" alt="Логотип магазина"></a>
     <section>
       <h2 class="visually-hidden">Навигация по страницам сайта</h2>  
       <nav>
@@ -255,7 +273,7 @@
         </ul>
       </nav>
     </section>  
-    <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br> +7 (812) 555-05-55</p>
+    <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br> <a href="tel:+7(812)555-05-55">+7 (812) 555-05-55</a></p>
     <section>
       <h2 class="visually-hidden">навигация по товарам\услугам</h2>
       <nav>

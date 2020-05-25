@@ -7,11 +7,11 @@
   <body>
     <header>
       <section>
-        <a href="#"><img src="img/logo.svg" alt="логотип магазина"></a>
+        <a href="#"><img src="img/logo.svg" alt="Логотип магазина Техномарт"></a>
         <h2 class="visually-hidden">Панель пользователя</h2>
         <form action="https://echo.htmlacademy.ru" method="post">
-          <label>
-            <input type="search" name="search" placeholder="Поиск">
+          <label for="search" id="search">
+            <input type="search" name="search" id="search"  placeholder="Поиск"  aria-labelledby="search">
           </label>
         </form>
         <a href="blank.html">Закладки</a>
@@ -30,11 +30,11 @@
           <button type="button">Войти</button>
           <button type="button">Регистрация</button>
           <a href="blank.html">
-            <img src="img/icon_user.png" alt="иконка пользователя">
+            <img src="img/icon_user.png" alt="Иконка-кнопка личного кабинета пользователя">
             Равшан Джамшутович
           </a>
-          <a href="">
-            <img src="img/icon_logout.png" alt="кнопка выхода">
+          <a href="blank.html">
+            <img src="img/icon_logout.png" alt="Иконка-кнопка для выхода из личного кабинета">
           </a>
           <a href="blank.html">Мои заказы</a>
           <a href="blank.html">Личный кабинет</a>
@@ -82,8 +82,8 @@
         <article>
           <h3>Перфораторы</h3>
           <p>Настоящие мужские игрушки</p>
-          <button type="button"><</button>
-          <button type="button">></button>
+          <button type="button" aria-label="Кнопка пролистывая слайдера влево"><</button>
+          <button type="button" aria-label="Кнопка пролистывая слайдера вправо">></button>
           <a href="catalog.html">Открыть каталог</a>
           <!-- <span>радио точка</span> -->
           <!-- <span>радио точка</span> -->
@@ -91,8 +91,8 @@
         <article>
           <h3>Дрели</h3>
           <p>Соседям на радость</p>
-          <button type="button"><</button>
-          <button type="button">></button>
+          <button type="button" aria-label="Кнопка пролистывая слайдера влево"><</button>
+          <button type="button" aria-label="Кнопка пролистывая слайдера вправо">></button>
           <a href="catalog.html">Открыть каталог</a>
           <!-- <span>радио точка</span> -->
           <!-- <span>радио точка</span> -->
@@ -103,40 +103,40 @@
         <a href="catalog.html">На все популярные товары</a>
         <article>
           <h3>Перфоратор Bosch bfg 9000</h3>
-          <img src="img/bosch_9000.jpg" alt="фото инструмента">
+          <img src="img/bosch_9000.jpg" alt="Фото инструмента - Перфоратор Bosch bfg 9000">
           <div>
-            <button class="visually-hidden">Купить</button>
-            <button class="visually-hidden">В закладки</button>
+            <button>Купить</button>
+            <button>В закладки</button>
           </div>
           <p>32500 Р.</p>
           <p>25500 Р.</p>
         </article>
         <article>
           <h3>Перфоратор Bosch bfg 3000</h3>
-          <img src="img\bosch_3000.jpg" alt="фото инструмента">
+          <img src="img\bosch_3000.jpg" alt="Фото инструмента - Перфоратор Bosch bfg 3000">
           <div>
-            <button class="visually-hidden">Купить</button>
-            <button class="visually-hidden">В закладки</button>
+            <button>Купить</button>
+            <button>В закладки</button>
           </div>
           <p>22500 Р.</p>
           <p>15500 Р.</p>
         </article>
         <article>
           <h3>Перфоратор Bosch bfg 6000</h3>
-          <img src="img\bosch_6000.jpg" alt="фото инструмента">
+          <img src="img\bosch_6000.jpg" alt="Фото инструмента - Перфоратор Bosch bfg 6000">
           <div>
-            <button class="visually-hidden">Купить</button>
-            <button class="visually-hidden">В закладки</button>
+            <button>Купить</button>
+            <button>В закладки</button>
           </div>
           <p>30500 Р.</p>
           <p>25500 Р.</p>
         </article>
         <article>
           <h3>Перфоратор Bosch bfg 2000</h3>
-          <img src="img\bosch_2000.jpg" alt="фото инструмента">
+          <img src="img\bosch_2000.jpg" alt="Фото инструмента - Перфоратор Bosch bfg 2000">
           <div>
-            <button class="visually-hidden">Купить</button>
-            <button class="visually-hidden">В закладки</button>
+            <button>Купить</button>
+            <button>В закладки</button>
           </div>
           <!-- <p>12500 Р.</p> -->
           <p>12500 Р.</p>
@@ -148,35 +148,35 @@
         <ul>
           <li>
             <h3 class="visually-hidden">Bosch</h3>
-            <a href="#"><img src="img\bosch.jpg" alt="Bosch"></a>
+            <a href="#"><img src="img\bosch.jpg" alt="Логотип фирмы Bosch"></a>
           </li>
           <li>
             <h3 class="visually-hidden">Makita</h3>
-            <a href="#"><img src="img\makita.jpg" alt="Makita"></a>
+            <a href="#"><img src="img\makita.jpg" alt="Логотип фирмы Makita"></a>
           </li>
           <li>
             <h3 class="visually-hidden">DeWALT</h3>
-            <a href="#"><img src="img\dewalt.jpg" alt="DeWALT"></a>
+            <a href="#"><img src="img\dewalt.jpg" alt="Логотип фирмы DeWALT"></a>
           </li>
           <li>
             <h3 class="visually-hidden">Интерскол</h3>
-            <a href="#"><img src="img\inter.jpg" alt="Интерскол"></a>
+            <a href="#"><img src="img\inter.jpg" alt="Логотип фирмы Интерскол"></a>
           </li>
           <li>
             <h3 class="visually-hidden">Hitachi</h3>
-            <a href="#"><img src="img\hitachi.jpg" alt="Hitachi"></a>
+            <a href="#"><img src="img\hitachi.jpg" alt="Логотип фирмы Hitachi"></a>
           </li>
           <li>
             <h3 class="visually-hidden">Lg</h3>
-            <a href="#"><img src="img\LG.jpg" alt="Lg"></a>
+            <a href="#"><img src="img\LG.jpg" alt=" Логотип фирмы Lg"></a>
           </li>
           <li>
             <h3 class="visually-hidden">Aeg Power Solutions</h3>
-            <a href="#"><img src="img\aeg.jpg" alt="Aeg Power Solutions"></a>
+            <a href="#"><img src="img\aeg.jpg" alt="Логотип фирмы Aeg Power Solutions"></a>
           </li>
           <li>
             <h3 class="visually-hidden">metabo</h3>
-            <a href="#"><img src="img\metabo.jpg" alt="metabo work. dont play."></a>
+            <a href="#"><img src="img\metabo.jpg" alt="Логотип фирмы Metabo work. dont play."></a>
           </li>
         </ul>
       </section>
@@ -223,10 +223,10 @@
         <p>Вы можете забрать товар сами, 
           заехав в наш офис:
         </p>
-        <a href="#"><img src="img\map.jpg" alt="изображение магазина на карте города"></a>
+        <a href="#"><img src="img\map.jpg" alt="Изображение магазина на карте города"></a>
         <button type="button">Заблудились? Напишите нам!</button> 
       </section>
-      <section class="visually-hidden">
+      <section>
         <h2 class="visually-hidden">Напишите нам</h2>
         <form action="https://echo.htmlacademy.ru" method="post">
           <p>
@@ -249,17 +249,17 @@
           </p>
           <button type="submit">Отправить</button>
         </form>
-        <button class="visually-hidden" type="button">Закрыть</button>
+        <button type="button" aria-label="Закрыть окно обратной связи">Закрыть</button>
       </section>
-      <section class="visually-hidden"> 
+      <section> 
         <h2 class="visually-hidden">Виджет карты города</h2>
         <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A12307483c981de1bff2ca94339040183ba5f9de282b3f0b2ccdae7b0bd9d4814&amp;source=constructor" width="500" height="400" frameborder="0">
         </iframe>
-        <button class="visually-hidden" type="button">Закрыть</button>
+        <button type="button" aria-label="Закрыть окна карты">Закрыть</button>
       </section>
     </main>
     <footer>
-      <a href="#"><img src="img/logo_footer.svg" alt="логотип магазина"></a>
+      <a href="#"><img src="img/logo_footer.svg" alt="Логотип магазина"></a>
       <section>
         <h2 class="visually-hidden">Навигация по страницам сайта</h2>  
         <nav>
@@ -272,7 +272,7 @@
           </ul>
         </nav>
       </section>  
-      <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br> +7 (812) 555-05-55</p>
+      <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br> <a href="tel:+7(812)555-05-55">+7 (812) 555-05-55</a></p>
       <section>
         <h2 class="visually-hidden">навигация по товарам\услугам</h2>
         <nav>
