@@ -1,0 +1,153 @@
+:root {
+    --basic-white: #FFFFFF;
+    --basic-carmine-pink: #EE3643;
+    --basic-smoky-white: #EAEAEA;
+    --basic-black: #000000;
+    --basic-purple-blue: #32425C;
+    --basic-periwinkle-craiola: #F1F5F7;
+    --basic-pale-orange-yellow: #FFD180;
+    --basic-sapphire-blue: #212A3A;
+    --basic-white-aluminum: #A9A9A9;
+    --basic-night-blue: #293449;
+    --basic-silver: #C5C5C5;
+    --basic-periwinkle-craiola: #F3F7F9;
+    --basic-beige: #F9F5F0;
+    --basic-twitter-color: #3BBCE3;
+    --basic-dark-green: #63A63E;
+    --basic-grandma-apples: #8ED78F;
+    --basic-blue-craiola: #B7BFC8;
+    --basic-light-plum: #DC91D8;
+    --basic-shiny-orange: #FFBF47;
+    --basic-pale-yellow: #FFDA96;
+    --basic-gray-brown: #444444;
+    --basic-gainsborough: #E5E5E5;
+    --basic-pearl-white: #F7F3EC;
+    --basic-pale-blue: #D7DCDE;
+
+}
+
+body {
+    min-width: 960px;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;  
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+header {
+    font-family: "Cuprum", Arial, sans-serif;
+}
+.head-logo {
+    background-color: var(--basic-carmine-pink);
+
+}
+.main-panel {
+    background-color: var( --basic-night-blue);
+    line-height: 24px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.main-panel a {
+    color: var(--basic-white);
+}
+.checkout-main-panel {
+    background-color: var( --basic-dark-green);
+
+}
+.main-panel-authorization {
+    background-color: var( --basic-periwinkle-craiola);
+}
+.main-panel-authorization .store-description {
+    color: var(--basic-carmine-pink);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    font-style: italic;
+
+}
+.cont-number {
+    color: var(--basic-carmine-pink);
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 30px;
+}
+.adress {
+    background-color: ver(--basic-purple-blue);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+.wrapper-account-panel a {
+    color: var(--basic-purple-blue);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+}
+.company-description p {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+}
+.company-description li p{
+    font-family: "Cuprum", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+}
+.company-description a{
+    font-family: "Cuprum", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--basic-white);
+    background-color: var(--basic-carmine-pink);
+    text-transform: uppercase;
+}
+.company-description button{
+    font-family: "Cuprum", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--basic-white);
+    background-color: var(--basic-carmine-pink);
+    text-transform: uppercase;
+}
+.сompany-name {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+.main-nav {
+    background-color: var(--basic-purple-blue);
+    max-width: 960px;
+}
+.main-nav a {
+    color: var(--basic-white);
+}
+
+
+
+
+
+
+
+
+
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}

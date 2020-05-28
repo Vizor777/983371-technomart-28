@@ -3,28 +3,31 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap">
+    <link href="normalize.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
   </head>
   <body>
     <header>
-      <section>
-        <a href="#"><img src="img/logo.svg" alt="Логотип магазина Техномарт"></a>
+      <section class="main-panel">
+        <a class="head-logo" href="#"><img src="img/logo.svg" alt="Логотип магазина Техномарт"></a>
         <h2 class="visually-hidden">Панель пользователя</h2>
         <form action="https://echo.htmlacademy.ru" method="post">
-          <label for="search" id="search">
+          <label  for="search" id="search">
             <input type="search" name="search" id="search"  placeholder="Поиск"  aria-labelledby="search">
           </label>
         </form>
         <a href="blank.html">Закладки</a>
         <a href="blank.html">Корзина</a>
-        <button type="button">Оформить заказ</button> 
+        <a class="checkout-main-panel" href="#">Оформить заказ</a> 
       </section>
-      <div>
-        <p>Интернет-магазин строительных 
+      <div class="main-panel-authorization">
+        <p class="store-description">Интернет-магазин строительных 
           материалов и инструментов для ремонта
         </p>
         <div>
-          <a href="tel:+7(812)555-05-55">+7 (812) 555-05-55</a>
-          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <a class="cont-number" href="tel:+7(812)555-05-55">+7 (812) 555-05-55</a>
+          <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
         <div>
           <button type="button">Войти</button>
@@ -36,11 +39,14 @@
           <a href="blank.html">
             <img src="img/icon_logout.png" alt="Иконка-кнопка для выхода из личного кабинета">
           </a>
-          <a href="blank.html">Мои заказы</a>
-          <a href="blank.html">Личный кабинет</a>
+          <div class="wrapper-account-panel">
+            <a href="blank.html">Мои заказы</a>
+            <a href="blank.html">Личный кабинет</a>
+          </div>
+          
         </div>  
       </div>
-      <section>
+      <section class="main-nav">
         <h2 class="visually-hidden">Главная навигация по страницам сайта</h2>
         <nav>
           <ul>
@@ -203,8 +209,8 @@
           <p></p>
         </section>
       </section>
-      <section>
-        <h2>Компания «Техномарт</h2>
+      <section class="company-description">
+        <h2 class="сompany-name">Компания «Техномарт»</h2>
         <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и 
           строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
         </p> 
@@ -218,8 +224,8 @@
         </ul>
         <a href="blank.html">Подробнее о компании</a>
       </section>
-      <section>
-        <h2>Контакты</h2>
+      <section class="company-description">
+        <h2 class="сompany-name">Контакты</h2>
         <p>Вы можете забрать товар сами, 
           заехав в наш офис:
         </p>
