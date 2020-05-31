@@ -1,8 +1,10 @@
 :root {
     --basic-white: #FFFFFF;
     --basic-carmine-pink: #EE3643;
+    --basic-dark-red: #BA2732;
     --basic-smoky-white: #EAEAEA;
     --basic-black: #000000;
+    --basic-dark-blue: #1D2739;
     --basic-purple-blue: #32425C;
     --basic-periwinkle-craiola: #F1F5F7;
     --basic-pale-orange-yellow: #FFD180;
@@ -15,6 +17,7 @@
     --basic-twitter-color: #3BBCE3;
     --basic-dark-green: #63A63E;
     --basic-grandma-apples: #8ED78F;
+    --basic-dark-green: #518534;
     --basic-blue-craiola: #B7BFC8;
     --basic-light-plum: #DC91D8;
     --basic-shiny-orange: #FFBF47;
@@ -26,56 +29,68 @@
 }
 
 @font-face {
-    font-family: "Cuprum";           /* название одно */
-    src: url('/fonts/cuprum.woff2');
-    src: url('/fonts/cuprum.woff'); /* разные файлы */
-    font-weight: 400;              /* разная плотность */
+    font-family: "Cuprum";          
+    src:    url('../fonts/cuprum.woff2'),
+            url('../fonts/cuprum.woff'); 
+    font-weight: 400;             
     font-style: normal;
+    font-display: swap;
   }
 @font-face {
-    font-family: "Cuprum";           /* название одно */
-    src: url('/fonts/cuprumbold.woff2');
-    src: url('/fonts/cuprumbold.woff'); /* разные файлы */
-    font-weight: 700;              /* разная плотность */
+    font-family: "Cuprum";          
+    src:    url('../fonts/cuprumbold.woff2'),
+            url('../fonts/cuprumbold.woff'); 
+    font-weight: 700;              
     font-style: normal;
+    font-display: swap;
   }
 @font-face {
-    font-family: "PT Sans";           /* название одно */
-    src: url('/fonts/ptsans.woff2');
-    src: url('/fonts/ptsans.woff'); /* разные файлы */
-    font-weight: 400;              /* разная плотность */
+    font-family: "PT Sans";           
+    src:    url('../fonts/ptsans.woff2'),
+            url('../fonts/ptsans.woff');
+    font-weight: 400;              
     font-style: normal;
+    font-display: swap;
   }
 @font-face {
-    font-family: "PT Sans";           /* название одно */
-    src: url('/fonts/ptsansbold.woff2');
-    src: url('/fonts/ptsansbold.woff'); /* разные файлы */
-    font-weight: 700;              /* разная плотность */
+    font-family: "PT Sans";           
+    src:    url('../fonts/ptsansbold.woff2'),
+            url('../fonts/ptsansbold.woff'); 
+    font-weight: 700;              
     font-style: normal;
+    font-display: swap;
   }
 @font-face {
-    font-family: "Cuprum";           /* название одно */
-    src: url('/fonts/cuprumbolditalic.woff2');
-    src: url('/fonts/cuprumbolditalic.woff'); /* разные файлы */
-    font-weight: 700;              /* разная плотность */
+    font-family: "Cuprum";           
+    src:    url('../fonts/cuprumbolditalic.woff2'),
+            url('../fonts/cuprumbolditalic.woff');
+    font-weight: 700;              
     font-style: italic;
+    font-display: swap;
   }
 @font-face {
-    font-family: "Cuprum";           /* название одно */
-    src: url('/fonts/cuprumitalic.woff2');
-    src: url('/fonts/cuprumitalic.woff'); /* разные файлы */
-    font-weight: 400;              /* разная плотность */
+    font-family: "Cuprum";           
+    src:    url('../fonts/cuprumitalic.woff2'),
+            url('../fonts/cuprumitalic.woff'); 
+    font-weight: 400;              
     font-style: italic;
+    font-display: swap;
   }
-
-
+/* Глобальные стили */
 body {
     min-width: 960px;
     margin: 0;
     padding: 0;
 }
-
-h1, h2 {
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* Селекторы */
+.sections-headline {
     font-family: "Cuprum", Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -83,24 +98,32 @@ h1, h2 {
     line-height: 30px;
     text-transform: uppercase;
 }
-a {
-    text-decoration: none;
-}
-button {
+.log-in, .registration, .button-buy, .to-bookmarks, .feed-back-button, .feed-back-submit, .feed-back-close, .map-close, .slider-button, .search-button, .sorting-button, .continius-order, .order-close 
+{
     padding: 0;
     border: none;
 }
-input {
+.log-in:active, .registration:active {
+    color: var(--basic-silver);
+}
+.input-background {
     background-color: transparent;
 }
-ul {
+.ul-style {
     list-style-type: none;  
 }
-img {
-    max-width: 100%;
-    height: auto;
+.manufacturers li {
+    border: 1px solid var(--basic-beige); 
 }
-header {
+.manufacturers li:hover {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15); 
+}
+.manufacturers li:active {
+    opacity: 0.5;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+
+}
+.main-header {
     font-family: "Cuprum", Arial, sans-serif;
 }
 .map-widget {
@@ -112,8 +135,15 @@ header {
 .feedback-info a:hover, .developed-by a:hover {
     text-decoration: underline ;
 }
+.feedback-info a:active, .developed-by a:active {
+    text-decoration: none;
+    color: var(--basic-carmine-pink);
+}
 .head-logo {
     background-color: var(--basic-carmine-pink);
+}
+.head-logo:active {
+    background-color: var(--basic-dark-red);
 }
 .main-panel {
     background-color: var( --basic-night-blue);
@@ -122,7 +152,7 @@ header {
     font-weight: 400;
 }
 .log-in {
-    background-image: url(/img/icon_login.png);
+    background-image: url(../img/icon_login.png);
     background-repeat: no-repeat;
     background-color: var(--basic-white);
 }
@@ -132,22 +162,44 @@ header {
 .user-panel {
     background-color: var(--basic-white);
 }
+.user-panel:active {
+    color: var(--basic-silver);
+}
 .registration {
     background-color: var(--basic-white);
 }
 .main-panel a {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
     color: var(--basic-white);
+
 }
 .user-bookmarks {
-    background-image: url(/img/Shape.png);
+    background-image: url(../img/Shape.png);
     background-repeat: no-repeat;
 }
-.user-store-basket {
-    background-image: url(/img/inv.png);
+.user-bookmarks:active {
+    background-image: url(../img/Shape.png);
     background-repeat: no-repeat;
+    color: rgba(255, 255, 255, 0.5);
+}
+.user-store-basket {
+    background-image: url(../img/inv.png);
+    background-repeat: no-repeat;
+}
+.user-store-basket:active {
+    background-image: url(../img/inv.png);
+    background-repeat: no-repeat;
+    color: rgba(255, 255, 255, 0.5);
 }
 .checkout-main-panel {
     background-color: var( --basic-dark-green);
+}
+.checkout-main-panel:active {
+    background-color: var( --basic-dark-green);
+    color: rgba(255, 255, 255, 0.5);
 }
 .checkout-main-panel:hover {
     background-color: var(--basic-grandma-apples);
@@ -164,7 +216,7 @@ header {
 }
 .cont-number {
     color: var(--basic-carmine-pink);
-    background-image: url(/img/icon_phone.png);
+    background-image: url(../img/icon_phone.png);
     background-repeat: no-repeat;
     font-weight: 700;
     font-size: 21px;
@@ -176,7 +228,7 @@ header {
     font-size: 14px;
     line-height: 24px;
     color: var(--basic-white);
-    background-image: url(/img/icon_search.png);
+    background-image: url(../img/icon_search.png);
     background-repeat: no-repeat;
 }
 .search-field input:focus {
@@ -184,16 +236,20 @@ header {
     background-color: var(--basic-white);
 }
 .adress {
-    background-color: ver(--basic-purple-blue);
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
+    color: var(--basic-purple-blue);
 }
 .wrapper-account-panel a {
-    color: var(--basic-purple-blue);
+    font-family: "Cuprum", Arial, sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 18px;
+    color: var(--basic-purple-blue);
+}
+.my-orders:active, .personal-area:active  {
+    color: var(--basic-silver);
 }
 .wrapper-account-panel a:hover {
     color: var(--basic-carmine-pink);
@@ -238,6 +294,29 @@ header {
 .main-nav a:hover {
     background-color: var(--basic-night-blue);
 }
+.main-nav a:active {
+    background-color: var(--basic-dark-blue);
+    opacity: 0.5;
+}
+.promo-block a {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration: none;
+    width: 135px;
+    min-height: 38px;
+    color: var(--basic-white);
+    background-color: var(--basic-white);
+}
+.promo-block a:hover{
+    background-color: var(--basic-silver);
+    opacity: 0.3;
+}
+.promo-block a:active{
+    background-color: var(--basic-white-aluminum);
+    opacity: 0.3;
+}
 .logo-footer {
     background-color: var(--basic-carmine-pink);
 }
@@ -246,9 +325,6 @@ header {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-}
-.footer-services a{
-    color: var(--basic-shiny-orange);
 }
 .footer-services a:hover {
     text-decoration: underline;
@@ -274,16 +350,16 @@ header {
     background-color: var(--basic-carmine-pink);
 }
 .vk-link {
-    background-image: url(/img/icon_vk.png);
+    background-image: url(../img/icon_vk.png);
     background-repeat: no-repeat;
 }
 .fb-link {
-    background-image: url(/img/icon_fb.png);
+    background-image: url(../img/icon_fb.png);
     background-repeat: no-repeat;
 }
 .inst-link {
     background-repeat: no-repeat;
-    background-image: url(/img/icon_insta.png);
+    background-image: url(../img/icon_insta.png);
 }
 .footer-wrapper-main {
     background-color: var(--basic-purple-blue);
@@ -296,6 +372,17 @@ header {
 }
 .footer-nav a:hover {
     text-decoration: underline;
+}
+.footer-nav a:active {
+    opacity: 0.5;
+    text-decoration: none;
+}
+.footer-nav-services a:active {
+    opacity: 0.5;
+    text-decoration: none;
+}
+.footer-services a{
+    color: var(--basic-shiny-orange);
 }
 .store-basket {
     display: none;
@@ -350,9 +437,15 @@ header {
 .sorting p:hover {
     opacity: 1;
 } 
+.sorting p:active {
+    color: var(--basic-carmine-pink);
+} 
 .product-cards article {
-    background-image: url(/img/label_new_products.jpg);
+    background-image: url(../img/label_new_products.jpg);
     background-repeat: no-repeat;
+}
+.product-cards article:hover {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
 .product-cards span {
     text-transform: uppercase;
@@ -371,11 +464,15 @@ header {
 .button-buy {
     color: var(--basic-white);
     background-color: var(--basic-dark-green);
-    background-image: url(/img/inv.png);
+    background-image: url(../img/inv.png);
     background-repeat: no-repeat;
 }
 .button-buy:hover {
     background-color: var(--basic-grandma-apples);
+}
+.button-buy:active {
+    outline: none;
+    background-color: var(--basic-dark-green);
 }
 .to-bookmarks {
     color: var(--basic-purple-blue);
@@ -385,12 +482,23 @@ header {
 .to-bookmarks:hover {
     border: 2px solid var( --basic-purple-blue);
 }
+.to-bookmarks:active {
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.28);
+    opacity: 0.5;
+}
 .old-price {
     font-weight: 700;
     font-size: 17px;
     line-height: 18px;
     color: var(--basic-white-aluminum);
     text-decoration: line-through;
+}
+.about-perf {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
 }
 .new-price {
     width: 141px;
@@ -399,18 +507,30 @@ header {
     font-size: 17px;
     line-height: 18px;
     color: var(--basic-pearl-white);
-    background-image: url(/img/red_button.jpg) 
+    background-image: url(../img/red_button.jpg) 
 }
 .page-navigation {
     font-size: 13px;
     line-height: 18px;
     color: var(--basic-black);
 }
-.page-navigation li:hover {
-    background-color: var(--basic-carmine-pink);
+.page-navigation li {
+    width: 48px;
+    min-height: 38px;
+    border: 1px solid var(--basic-gainsborough);
+    border-radius: 2px;
 }
-.popular-manufacturers li:hover {
-    box-shadow: 0 0 5px 2px red;	
+.page-navigation li:hover {
+    border: 1px solid var(--basic-silver);
+    background: var(--basic-white);
+    border-radius: 2px;
+}
+.page-navigation li:active {
+    border: 1px solid var(--basic-carmine-pink);
+    border-radius: 2px;
+}
+.page-navigation li:first-child {
+  background: var(--basic-carmine-pink);  
 }
 .popular-manufacturers li{
     width: 220px;

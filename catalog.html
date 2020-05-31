@@ -3,17 +3,17 @@
 <head>
   <meta charset="utf-8">
   <title>Перфораторы</title>
-  <link href="normalize.css" rel="stylesheet">
-  <link href="/css/style.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-  <header>
+  <header class="main-header">
     <section class="main-panel">
       <a class="head-logo" href="#"><img src="img/logo.svg" alt="Логотип магазина Техномарт"></a>
       <h2 class="visually-hidden">Панель пользователя</h2>
       <form action="https://echo.htmlacademy.ru" method="post">
         <label  class="search-field" for="search" id="search">
-          <input type="search" name="search" id="search" aria-labelledby="search" value="Поиск:">
+          <input class="input-background" type="search" name="search" id="search" aria-labelledby="search" value="Поиск:">
         </label>
       </form>
       <a class="user-bookmarks" href="blank.html">Закладки</a>
@@ -39,16 +39,15 @@
           <img src="img/icon_logout.png" alt="Иконка-кнопка для выхода из личного кабинета">
         </a>
         <div class="wrapper-account-panel">
-          <a href="blank.html">Мои заказы</a>
-          <a href="blank.html">Личный кабинет</a>
+          <a class="my-orders" href="blank.html">Мои заказы</a>
+          <a class="personal-area" href="blank.html">Личный кабинет</a>
         </div>
-        
       </div>  
     </div>
     <section class="main-nav">
       <h2 class="visually-hidden">Главная навигация по страницам сайта</h2>
       <nav>
-        <ul>
+        <ul class="ul-style">
           <li><a href="index.html">Главная</a></li>
           <li><a href="blank.html">Компания</a></li>
           <li><a href="catalog.html">Каталог</a></li>
@@ -64,7 +63,7 @@
     <h1>Перфораторы</h1>
     <section class="bread-crumbs">
       <h2 class="visually-hidden">Меню "хлебные крошки"</h2>
-      <ul>
+      <ul class="ul-style">
         <li><a href="catalog.html">Каталог</a></li>
         <li><a href="blank.html">Инструмент</a></li>
         <li><a href="catalog.html">Перфораторы</a></li>
@@ -77,44 +76,44 @@
             <legend>Цена</legend>
             <label >
               <p class="visually-hidden">От:</p>
-              <input class="price-min" type="text" name="price_min" aria-label="Цена минимальная" value="0"></input> <!--цена мин-->
+              <input class="price-min input-background" type="text" name="price_min" aria-label="Цена минимальная" value="0"></input> <!--цена мин-->
             </label>
             <label >
               <p class="visually-hidden">До:</p> 
-              <input class="price-max" type="text" name="price_max" aria-label="Цена максимальная" value="3000"></input>   <!--цена макс-->
+              <input class="price-max input-background" type="text" name="price_max" aria-label="Цена максимальная" value="3000"></input>   <!--цена макс-->
             </label>
             <div></div> <!--Ползунок цены-->
           </fieldset>
           <fieldset>
             <legend>Производители:</legend>
-            <ul>
+            <ul class="ul-style">
               <li>
                 <label>
-                  <input type="checkbox" name="Bosch" checked>
+                  <input class="input-background" type="checkbox" name="Bosch" checked>
                     Bosch
                 </label>  
               </li>
               <li>
                 <label>
-                  <input type="checkbox" name="Интерскол">
+                  <input class="input-background" type="checkbox" name="Интерскол">
                   Интерскол
                 </label>
               </li>
               <li>
                 <label>
-                  <input type="checkbox" name="Makita" checked>
+                  <input class="input-background" type="checkbox" name="Makita" checked>
                   Makita
                 </label>
               </li>
               <li>
                 <label>
-                  <input type="checkbox" name="Dewalt">
+                  <input class="input-background" type="checkbox" name="Dewalt">
                   Dewalt
                 </label>
               </li>
               <li>
                 <label>
-                  <input type="checkbox" name="Hitachi">
+                  <input class="input-background" type="checkbox" name="Hitachi">
                   Hitachi
                 </label>
               </li>
@@ -122,22 +121,22 @@
           </fieldset>
           <fieldset>
             <legend>Питание:</legend>
-            <ul>
+            <ul class="ul-style">
               <li>
                 <label>
-                  <input type="radio" name="power_supply" value="rechargeable" >
+                  <input class="input-background" type="radio" name="power_supply" value="rechargeable" >
                   Аккумуляторные
                 </label>
               </li>
               <li>
                 <label>
-                  <input type="radio" name="power_supply" value="mains_power">
+                  <input class="input-background" type="radio" name="power_supply" value="mains_power">
                   Сетевые
                 </label>
               </li>
             </ul>
           </fieldset>
-          <button type="submit">Показать</button>
+          <button class="search-button" type="submit">Показать</button>
         </form>
     </section>
     <section class="sorting">
@@ -145,8 +144,8 @@
       <p>По цене</p>
       <p>По типу</p>
       <p>По функционалу</p>
-      <button type="button" aria-label="Кнопка сортировки вверх">up</button>
-      <button type="button" aria-label="Кнопка сортировки вниз" >down</button>
+      <button class="sorting-button" type="button" aria-label="Кнопка сортировки вверх">up</button>
+      <button class="sorting-button" type="button" aria-label="Кнопка сортировки вниз" >down</button>
     </section>
     <section class="product-cards">
       <h2 class="visually-hidden">Карточки товаров</h2>
@@ -243,7 +242,7 @@
     </section>
     <section class="page-navigation">
       <h2 class="visually-hidden">Навигация по страницам</h2>
-      <ul>
+      <ul class="ul-style ul-page-nav">
         <li><a href="#"></a>1</li>
         <li><a href="#"></a>2</li>
         <li><a href="#"></a>3</li>
@@ -251,8 +250,8 @@
       </ul>
     </section>
     <section>
-      <h2>Пара слов о перфораторах</h2>
-      <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+      <h2 class="sections-headline">Пара слов о перфораторах</h2>
+      <p class="about-perf">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
         Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. 
         В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
     </section>
@@ -263,7 +262,7 @@
       <section>
         <h2 class="visually-hidden">Навигация по страницам сайта</h2>  
         <nav class="footer-nav">
-          <ul>
+          <ul class="ul-style">
             <li><a href="blank.html">Компания</a></li>
             <li><a href="blank.html">Новости</a></li>
             <li><a href="catalog.html">Каталог</a></li>
@@ -275,8 +274,8 @@
       <p class="footer-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br> <a href="tel:+7(812)555-05-55">+7 (812) 555-05-55</a></p>
       <section>
         <h2 class="visually-hidden">навигация по товарам\услугам</h2>
-        <nav>
-          <ul class="footer-services">
+        <nav class="footer-nav-services">
+          <ul class="footer-services ul-style">
             <li><a href="blank.html">Материалы</a></li>
             <li><a href="blank.html">Техника</a></li>
             <li><a href="blank.html">Инструмент</a></li>
@@ -287,7 +286,7 @@
     </div>
     <section class="second-footer-section">
     <p class="copyright-company">© 2010–2019 Компания «Техномарт»<br>Все права защищены</p>
-      <ul class="social-icons">
+      <ul class="social-icons ul-style">
         <li><a class="vk-link" href="#">Вконтакте</a></li>
         <li><a class="fb-link" href="#">Фейсбук</a></li>
         <li><a class="inst-link" href="#">Инстаграм</a></li>
@@ -300,8 +299,8 @@
     <h2 class="visually-hidden">Корзина</h2>
     <p>Товар добавлен в корзину!</p>
     <a href="blank.html">Оформить заказ</a>
-    <button type="button">Продолжить покупки</button>
-    <button type="button" aria-label="Закрыть окно корзины">Закрыть</button>
+    <button class="continius-order" type="button">Продолжить покупки</button>
+    <button class="order-close" type="button" aria-label="Закрыть окно корзины">Закрыть</button>
   </section>
 </body>
 </html>

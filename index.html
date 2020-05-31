@@ -3,17 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="normalize.css" rel="stylesheet">
-    <link href="/css/style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header>
+    <header class="main-header">
       <section class="main-panel">
         <a class="head-logo" href="#"><img src="img/logo.svg" alt="Логотип магазина Техномарт"></a>
         <h2 class="visually-hidden">Панель пользователя</h2>
         <form action="https://echo.htmlacademy.ru" method="post">
           <label  class="search-field" for="search" id="search">
-            <input type="search" name="search" id="search" aria-labelledby="search" value="Поиск:">
+            <input class="input-background" type="search" name="search" id="search" aria-labelledby="search" value="Поиск:">
           </label>
         </form>
         <a class="user-bookmarks" href="blank.html">Закладки</a>
@@ -39,16 +39,15 @@
             <img src="img/icon_logout.png" alt="Иконка-кнопка для выхода из личного кабинета">
           </a>
           <div class="wrapper-account-panel">
-            <a href="blank.html">Мои заказы</a>
-            <a href="blank.html">Личный кабинет</a>
+            <a class="my-orders" href="blank.html">Мои заказы</a>
+            <a class="personal-area" href="blank.html">Личный кабинет</a>
           </div>
-          
         </div>  
       </div>
       <section class="main-nav">
         <h2 class="visually-hidden">Главная навигация по страницам сайта</h2>
         <nav>
-          <ul>
+          <ul class="ul-style">
             <li><a href="index.html">Главная</a></li>
             <li><a href="blank.html">Компания</a></li>
             <li><a href="catalog.html">Каталог</a></li>
@@ -62,7 +61,7 @@
     </header>
     <main>
       <h1 class="visually-hidden">Техномарт</h1>
-      <section>
+      <section class="promo-block">
         <h2 class="visually-hidden">Промо-блок</h2>
         <article>
           <h3>Материалы</h3>
@@ -87,8 +86,8 @@
         <article>
           <h3>Перфораторы</h3>
           <p>Настоящие мужские игрушки</p>
-          <button type="button" aria-label="Кнопка пролистывая слайдера влево"><</button>
-          <button type="button" aria-label="Кнопка пролистывая слайдера вправо">></button>
+          <button class="slider-button" type="button" aria-label="Кнопка пролистывая слайдера влево"><</button>
+          <button class="slider-button" type="button" aria-label="Кнопка пролистывая слайдера вправо">></button>
           <a href="catalog.html">Открыть каталог</a>
           <!-- <span>радио точка</span> -->
           <!-- <span>радио точка</span> -->
@@ -96,15 +95,15 @@
         <article>
           <h3>Дрели</h3>
           <p>Соседям на радость</p>
-          <button type="button" aria-label="Кнопка пролистывая слайдера влево"><</button>
-          <button type="button" aria-label="Кнопка пролистывая слайдера вправо">></button>
+          <button class="slider-button" type="button" aria-label="Кнопка пролистывая слайдера влево"><</button>
+          <button class="slider-button" type="button" aria-label="Кнопка пролистывая слайдера вправо">></button>
           <a href="catalog.html">Открыть каталог</a>
           <!-- <span>радио точка</span> -->
           <!-- <span>радио точка</span> -->
         </article>
       </section>
       <section section class="product-cards">
-        <h2>Популярные товары:</h2>
+        <h2 class="sections-headline">Популярные товары:</h2>
         <a href="catalog.html">На все популярные товары</a>
         <article>
           <h3>Перфоратор Bosch bfg 9000</h3>
@@ -148,9 +147,9 @@
         </article>
       </section>
       <section class="popular-manufacturers">
-        <h2>Популярные производители</h2>
+        <h2 class="sections-headline">Популярные производители</h2>
         <a href="catalog.html">Все производители</a>
-        <ul>
+        <ul class="ul-style manufacturers">
           <li>
             <h3 class="visually-hidden">Bosch</h3>
             <a href="#"><img src="img\bosch.jpg" alt="Логотип фирмы Bosch"></a>
@@ -186,8 +185,8 @@
         </ul>
       </section>
       <section>
-        <h2>Сервисы</h2>
-        <ul>
+        <h2 class="sections-headline">Сервисы</h2>
+        <ul class="ul-style">
           <li><p>Доставка</p></li>
           <li><p>Гарантия</p></li>
           <li><p>Кредит</p></li>
@@ -209,14 +208,14 @@
         </section>
       </section>
       <section class="company-description">
-        <h2 class="сompany-name">Компания «Техномарт»</h2>
+        <h2 class="sections-headline">Компания «Техномарт»</h2>
         <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и 
           строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
         </p> 
         <p>Мы можем доставить ваш товар в самые отдаленные точки России!
           Техномарт работает со многими транспортными компаниями:
         </p>
-        <ul>
+        <ul class="ul-style">
           <li><p>Деловые линии</p> </li>
           <li><p>Автотрейдинг</p></li>
           <li><p>ЖелДорЭкспедиция</p></li>
@@ -224,14 +223,13 @@
         <a href="blank.html">Подробнее о компании</a>
       </section>
       <section class="company-description">
-        <h2 class="сompany-name">Контакты</h2>
+        <h2 class="sections-headline">Контакты</h2>
         <p>Вы можете забрать товар сами, 
           заехав в наш офис:
         </p>
         <a href="#"><img src="img\map.jpg" alt="Изображение магазина на карте города"></a>
-        <button type="button">Заблудились? Напишите нам!</button> 
+        <button class="feed-back-button" type="button">Заблудились? Напишите нам!</button> 
       </section>
-     
     </main>
     <footer class="footer">
       <a href="#" class="logo-footer"><img src="img/logo_footer.svg" alt="Логотип магазина"></a>
@@ -239,7 +237,7 @@
         <section>
           <h2 class="visually-hidden">Навигация по страницам сайта</h2>  
           <nav class="footer-nav">
-            <ul>
+            <ul class="ul-style">
               <li><a href="blank.html">Компания</a></li>
               <li><a href="blank.html">Новости</a></li>
               <li><a href="catalog.html">Каталог</a></li>
@@ -251,8 +249,8 @@
         <p class="footer-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br> <a href="tel:+7(812)555-05-55">+7 (812) 555-05-55</a></p>
         <section>
           <h2 class="visually-hidden">навигация по товарам\услугам</h2>
-          <nav>
-            <ul class="footer-services">
+          <nav class="footer-nav-services">
+            <ul class="footer-services ul-style">
               <li><a href="blank.html">Материалы</a></li>
               <li><a href="blank.html">Техника</a></li>
               <li><a href="blank.html">Инструмент</a></li>
@@ -263,7 +261,7 @@
       </div>
       <section class="second-footer-section">
       <p class="copyright-company">© 2010–2019 Компания «Техномарт»<br>Все права защищены</p>
-        <ul class="social-icons">
+        <ul class="social-icons ul-style">
           <li><a class="vk-link" href="#">Вконтакте</a></li>
           <li><a class="fb-link" href="#">Фейсбук</a></li>
           <li><a class="inst-link" href="#">Инстаграм</a></li>
@@ -278,30 +276,30 @@
         <p>
           <label>
           Ваше имя:
-          <input type="text" name="name" placeholder="Имя Фамилия"> 
+          <input class="input-background" type="text" name="name" placeholder="Имя Фамилия"> 
           </label>
         </p>
         <p>
           <label>
           Ваша e-mail:
-          <input type="e-mail" name="e-mail" placeholder="email@example.com">
+          <input class="input-background" type="e-mail" name="e-mail" placeholder="email@example.com">
           </label>
         </p>
         <p>
           <label>
           Текс письма:
-          <input type="text" name="content_letter" placeholder="В свободной форме">
+          <input class="input-background" type="text" name="content_letter" placeholder="В свободной форме">
           </label>
         </p>
-        <button type="submit">Отправить</button>
+        <button class="feed-back-submit" type="submit">Отправить</button>
       </form>
-      <button type="button" aria-label="Закрыть окно обратной связи">Закрыть</button>
+      <button class="feed-back-close" type="button" aria-label="Закрыть окно обратной связи">Закрыть</button>
     </section>
     <section class="map-widget"> 
       <h2 class="visually-hidden">Виджет карты города</h2>
       <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A12307483c981de1bff2ca94339040183ba5f9de282b3f0b2ccdae7b0bd9d4814&amp;source=constructor" width="500" height="400" frameborder="0">
       </iframe>
-      <button type="button" aria-label="Закрыть окна карты">Закрыть</button>
+      <button class="map-close" type="button" aria-label="Закрыть окна карты">Закрыть</button>
     </section>
   </body>
 </html>
