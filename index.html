@@ -29,19 +29,24 @@
           <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
         <div>
-          <button class="log-in" type="button">Войти</button>
-          <button class="registration" type="button">Регистрация</button>
-          <a class="user-panel" href="blank.html">
-            <img src="img/icon_user.png" alt="Иконка-кнопка личного кабинета пользователя">
-            Равшан Джамшутович
-          </a>
-          <a class="user-panel" href="blank.html">
-            <img src="img/icon_logout.png" alt="Иконка-кнопка для выхода из личного кабинета">
-          </a>
-          <div class="wrapper-account-panel">
-            <a class="my-orders" href="blank.html">Мои заказы</a>
-            <a class="personal-area" href="blank.html">Личный кабинет</a>
+          <div class="authorization-registration-active">
+            <button class="log-in" type="button">Войти</button>
+            <button class="registration" type="button">Регистрация</button>
           </div>
+          <div class="account-info">
+            <a class="user-panel" href="blank.html">
+              <img src="img/icon_user.png" alt="Иконка-кнопка личного кабинета пользователя">
+              Равшан Джамшутович
+            </a>
+            <a class="user-panel" href="blank.html">
+              <img src="img/icon_logout.png" alt="Иконка-кнопка для выхода из личного кабинета">
+            </a>
+            <div class="wrapper-account-panel">
+              <a class="my-orders" href="blank.html">Мои заказы</a>
+              <a class="personal-area" href="blank.html">Личный кабинет</a>
+            </div>
+          </div>
+          
         </div>  
       </div>
       <section class="main-nav">
@@ -63,48 +68,48 @@
       <h1 class="visually-hidden">Техномарт</h1>
       <section class="promo-block">
         <h2 class="visually-hidden">Промо-блок</h2>
-        <article>
+        <article class="materials-cards">
           <h3>Материалы</h3>
           <a href="blank.html">На любой вкус</a>
         </article>
-        <article>
+        <article class="tools-cards">
           <h3>Инструмент</h3>
           <a href="blank.html">На все случаи</a>
         </article>
-        <article>
+        <article class="equipment-cards">
           <h3>Техника</h3>
           <a href="blank.html">Для стройки</a>
         </article>
-        <article>
+        <article class="sales-cards">
           <h3>Скидки 50%</h3>
           <a href="blank.html">На 350 товаров</a>
         </article>
-        <article>
+        <article class="delivery-cards">
           <h3>Доставка</h3>
           <a href="blank.html">Бесплатно</a>
         </article>
-        <article>
-          <h3>Перфораторы</h3>
-          <p>Настоящие мужские игрушки</p>
+        <article class="rotary-hammers-slider">
+          <h3 class="slider-name">Перфораторы</h3>
+          <p class="slider-info">Настоящие мужские игрушки</p>
           <button class="slider-button" type="button" aria-label="Кнопка пролистывая слайдера влево"><</button>
           <button class="slider-button" type="button" aria-label="Кнопка пролистывая слайдера вправо">></button>
-          <a href="catalog.html">Открыть каталог</a>
+          <a class="open-catalog-slider" href="catalog.html">Открыть каталог</a>
           <!-- <span>радио точка</span> -->
           <!-- <span>радио точка</span> -->
         </article>
-        <article>
-          <h3>Дрели</h3>
-          <p>Соседям на радость</p>
+        <article class="drills-cards">
+          <h3 class="slider-name">Дрели</h3>
+          <p class="slider-info">Соседям на радость</p>
           <button class="slider-button" type="button" aria-label="Кнопка пролистывая слайдера влево"><</button>
           <button class="slider-button" type="button" aria-label="Кнопка пролистывая слайдера вправо">></button>
-          <a href="catalog.html">Открыть каталог</a>
+          <a class="open-catalog-slider" href="catalog.html">Открыть каталог</a>
           <!-- <span>радио точка</span> -->
           <!-- <span>радио точка</span> -->
         </article>
       </section>
-      <section section class="product-cards">
+      <section class="product-cards">
         <h2 class="sections-headline">Популярные товары:</h2>
-        <a href="catalog.html">На все популярные товары</a>
+        <a class="all-popular-products" href="catalog.html">Все популярные товары</a>
         <article>
           <h3>Перфоратор Bosch bfg 9000</h3>
           <img src="img/bosch_9000.jpg" alt="Фото инструмента - Перфоратор Bosch bfg 9000">
@@ -148,7 +153,7 @@
       </section>
       <section class="popular-manufacturers">
         <h2 class="sections-headline">Популярные производители</h2>
-        <a href="catalog.html">Все производители</a>
+        <a class="all-popular-manufacturers" href="catalog.html">Все производители</a>
         <ul class="ul-style manufacturers">
           <li>
             <h3 class="visually-hidden">Bosch</h3>

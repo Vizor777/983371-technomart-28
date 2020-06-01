@@ -151,7 +151,12 @@ img {
     font-size: 18px;
     font-weight: 400;
 }
+.authorization-registration-panel {
+    display: none;
+}
 .log-in {
+    font-size: 21px;
+    line-height: 21px;
     background-image: url(../img/icon_login.png);
     background-repeat: no-repeat;
     background-color: var(--basic-white);
@@ -160,13 +165,21 @@ img {
     color: var(--basic-carmine-pink);
 }
 .user-panel {
+    font-size: 21px;
+    line-height: 21px;
     background-color: var(--basic-white);
+    color: var(--basic-black);
 }
 .user-panel:active {
     color: var(--basic-silver);
 }
 .registration {
+    font-size: 21px;
+    line-height: 21px;
     background-color: var(--basic-white);
+}
+.account-info {
+    display: none;
 }
 .main-panel a {
     font-family: "Cuprum", Arial, sans-serif;
@@ -298,16 +311,44 @@ img {
     background-color: var(--basic-dark-blue);
     opacity: 0.5;
 }
+.promo-block:nth-last-child(2n) {
+   width: 300px;
+   min-height: 123px;
+}
+.promo-block h3:nth-last-child(2n) {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: var(--basic-white);
+}
+.slider-name  {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+    color: var(--basic-white);
+    text-transform: uppercase;
+}
+.slider-info {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--basic-white);
+}
 .promo-block a {
+    display: block;
+    width: 135px;
+    min-height: 38px;
     font-family: "Cuprum", Arial, sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
     text-decoration: none;
-    width: 135px;
-    min-height: 38px;
     color: var(--basic-white);
-    background-color: var(--basic-white);
+    opacity: 0.8;
+    background-color: #ffffff36;
 }
 .promo-block a:hover{
     background-color: var(--basic-silver);
@@ -535,6 +576,40 @@ img {
 .popular-manufacturers li{
     width: 220px;
     min-height: 145px;
+}
+.open-catalog-slider, .all-popular-manufacturers, .all-popular-products {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--basic-white);
+    text-transform: uppercase;
+    background-image: url(../img/red_button.jpg);
+}
+.materials-cards {
+    background-color: var(--basic-shiny-orange);
+}
+.tools-cards {
+    background-color: var(--basic-twitter-color);
+}
+.equipment-cards {
+    background-color: var(--basic-light-plum);
+}
+.sales-cards {
+    background-color: var(--basic-grandma-apples);
+}
+.delivery-cards {
+    background-color: var(--basic-shiny-orange);
+}
+.rotary-hammers-slider {
+    width: 620px;
+    min-height: 266px;
+    background-image: url(../img/background_punch_slider.jpg);
+}
+.drills-cards {
+    width: 620px;
+    min-height: 266px;
+    background-image: url(../img/background_drill_slider.jpg);
 }
 .visually-hidden {
     position: absolute;
