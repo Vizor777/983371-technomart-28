@@ -103,14 +103,38 @@ img {
     padding: 0;
     border: none;
 }
+.log-in {
+    width: 121px;
+    min-height: 45px;
+    margin-right: 10px;
+}
 .log-in:active, .registration:active {
     color: var(--basic-silver);
 }
 .input-background {
     background-color: transparent;
 }
+.nav-menu {
+    min-height: 60px;
+}
 .ul-style {
-    list-style-type: none;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    min-height: inherit;
+    padding: 0; 
+}
+.ul-style:first-child {
+    margin-left: 52px;
+}
+.ul-style:last-child {
+    margin-right: 47px;
+}
+.ul-style li {
+    /* min-height: 24px; */
+    display: block;
+    
 }
 .manufacturers li {
     border: 1px solid var(--basic-beige); 
@@ -125,6 +149,7 @@ img {
 }
 .main-header {
     font-family: "Cuprum", Arial, sans-serif;
+    background-color: var( --basic-periwinkle-craiola);
 }
 .map-widget {
     display: none;
@@ -140,6 +165,8 @@ img {
     color: var(--basic-carmine-pink);
 }
 .head-logo {
+    width: 220px;
+    min-height: 47px;
     background-color: var(--basic-carmine-pink);
 }
 .head-logo:active {
@@ -174,6 +201,8 @@ img {
     color: var(--basic-silver);
 }
 .registration {
+    width: 150px;
+    min-height: 45px;
     font-size: 21px;
     line-height: 21px;
     background-color: var(--basic-white);
@@ -190,6 +219,8 @@ img {
 
 }
 .user-bookmarks {
+    width: 150px;
+    min-width: 42px;
     background-image: url(../img/Shape.png);
     background-repeat: no-repeat;
 }
@@ -199,8 +230,15 @@ img {
     color: rgba(255, 255, 255, 0.5);
 }
 .user-store-basket {
+    width: 150px;
+    min-width: 42px;
     background-image: url(../img/inv.png);
     background-repeat: no-repeat;
+}
+.search-form .input-background{
+    width: 270px;
+    min-height: 42px;
+    border: 0;
 }
 .user-store-basket:active {
     background-image: url(../img/inv.png);
@@ -208,6 +246,8 @@ img {
     color: rgba(255, 255, 255, 0.5);
 }
 .checkout-main-panel {
+    width: 150px;
+    min-height: 42px;
     background-color: var( --basic-dark-green);
 }
 .checkout-main-panel:active {
@@ -218,9 +258,18 @@ img {
     background-color: var(--basic-grandma-apples);
 }
 .main-panel-authorization {
-    background-color: var( --basic-periwinkle-craiola);
+    
+}
+.main-panel-authorization .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 153px;
 }
 .main-panel-authorization .store-description {
+    width: 197px;
+    min-height: 71px;
+    margin-left: 30px;
     color: var(--basic-carmine-pink);
     font-weight: 400;
     font-size: 16px;
@@ -228,6 +277,10 @@ img {
     font-style: italic;
 }
 .cont-number {
+    display: block;
+    width: 270px;
+    min-width: 45px;
+    text-align: center;
     color: var(--basic-carmine-pink);
     background-image: url(../img/icon_phone.png);
     background-repeat: no-repeat;
@@ -249,6 +302,9 @@ img {
     background-color: var(--basic-white);
 }
 .adress {
+    width: 250px;
+    min-height: 24px;
+    margin: 0 auto;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
@@ -299,7 +355,10 @@ img {
 }
 .main-nav {
     background-color: var(--basic-purple-blue);
-    max-width: 960px;
+    width: 940px;
+    min-height: 60px;
+    margin: 0 auto;
+    margin-bottom: 60px;
 }
 .main-nav a {
     color: var(--basic-white);
@@ -617,4 +676,22 @@ img {
     width: 1px;
     height: 1px;
     margin: -1px;
+}
+.page {
+    height: 100%;
+}
+.page-body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
+}
+.container {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+.main-panel .container {
+    display: flex;
+
 }

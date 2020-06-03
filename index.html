@@ -1,57 +1,60 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="page-body">
     <header class="main-header">
       <section class="main-panel">
-        <a class="head-logo" href="#"><img src="img/logo.svg" alt="Логотип магазина Техномарт"></a>
-        <h2 class="visually-hidden">Панель пользователя</h2>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <label  class="search-field" for="search" id="search">
-            <input class="input-background" type="search" name="search" id="search" aria-labelledby="search" value="Поиск:">
-          </label>
-        </form>
-        <a class="user-bookmarks" href="blank.html">Закладки</a>
-        <a class="user-store-basket" href="blank.html">Корзина</a>
-        <a class="checkout-main-panel" href="#">Оформить заказ</a> 
+        <div class="container"> 
+          <a class="head-logo" href="#"><img src="img/logo.svg" alt="Логотип магазина Техномарт"></a>
+          <h2 class="visually-hidden">Панель пользователя</h2>
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+            <label  class="search-field" for="search" id="search">
+              <input class="input-background" type="search" name="search" id="search" aria-labelledby="search" value="Поиск:">
+            </label>
+          </form>
+          <a class="user-bookmarks" href="blank.html">Закладки</a>
+          <a class="user-store-basket" href="blank.html">Корзина</a>
+          <a class="checkout-main-panel" href="#">Оформить заказ</a>
+        </div>  
       </section>
       <div class="main-panel-authorization">
-        <p class="store-description">Интернет-магазин строительных 
-          материалов и инструментов для ремонта
-        </p>
-        <div>
-          <a class="cont-number" href="tel:+7(812)555-05-55">+7 (812) 555-05-55</a>
-          <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        </div>
-        <div>
-          <div class="authorization-registration-active">
-            <button class="log-in" type="button">Войти</button>
-            <button class="registration" type="button">Регистрация</button>
+        <div class="container">
+          <p class="store-description">Интернет-магазин строительных 
+            материалов <br>и инструментов для ремонта
+          </p>
+          <div>
+            <a class="cont-number" href="tel:+7(812)555-05-55">+7 (812) 555-05-55</a>
+            <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </div>
-          <div class="account-info">
-            <a class="user-panel" href="blank.html">
-              <img src="img/icon_user.png" alt="Иконка-кнопка личного кабинета пользователя">
-              Равшан Джамшутович
-            </a>
-            <a class="user-panel" href="blank.html">
-              <img src="img/icon_logout.png" alt="Иконка-кнопка для выхода из личного кабинета">
-            </a>
-            <div class="wrapper-account-panel">
-              <a class="my-orders" href="blank.html">Мои заказы</a>
-              <a class="personal-area" href="blank.html">Личный кабинет</a>
+          <div>
+            <div class="authorization-registration-active">
+              <button class="log-in" type="button">Войти</button>
+              <button class="registration" type="button">Регистрация</button>
             </div>
-          </div>
-          
-        </div>  
+            <div class="account-info">
+              <a class="user-panel" href="blank.html">
+                <img src="img/icon_user.png" alt="Иконка-кнопка личного кабинета пользователя">
+                Равшан Джамшутович
+              </a>
+              <a class="user-panel" href="blank.html">
+                <img src="img/icon_logout.png" alt="Иконка-кнопка для выхода из личного кабинета">
+              </a>
+              <div class="wrapper-account-panel">
+                <a class="my-orders" href="blank.html">Мои заказы</a>
+                <a class="personal-area" href="blank.html">Личный кабинет</a>
+              </div>
+            </div>
+          </div> 
+        </div>
       </div>
       <section class="main-nav">
         <h2 class="visually-hidden">Главная навигация по страницам сайта</h2>
-        <nav>
+        <nav class="nav-menu">
           <ul class="ul-style">
             <li><a href="index.html">Главная</a></li>
             <li><a href="blank.html">Компания</a></li>
@@ -64,7 +67,7 @@
         </nav>
       </section>
     </header>
-    <main>
+    <main class="container">
       <h1 class="visually-hidden">Техномарт</h1>
       <section class="promo-block">
         <h2 class="visually-hidden">Промо-блок</h2>
