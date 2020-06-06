@@ -98,8 +98,11 @@ img {
     line-height: 30px;
     text-transform: uppercase;
 }
-.log-in, .registration, .button-buy, .to-bookmarks, .feed-back-button, .feed-back-submit, .feed-back-close, .map-close, .slider-button, .search-button, .sorting-button, .continius-order, .order-close 
-{
+.log-in, .registration, .button-buy, 
+.to-bookmarks, .feed-back-button, .feed-back-submit, 
+.feed-back-close, .map-close, 
+.slider-button, .search-button, .sorting-button, 
+.continius-order, .order-close {
     padding: 0;
     border: none;
 }
@@ -120,6 +123,7 @@ img {
 .ul-style {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     list-style-type: none;
     min-height: inherit;
@@ -168,6 +172,7 @@ img {
     width: 220px;
     min-height: 47px;
     background-color: var(--basic-carmine-pink);
+    box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
 }
 .head-logo:active {
     background-color: var(--basic-dark-red);
@@ -208,6 +213,9 @@ img {
     background-color: var(--basic-white);
 }
 .account-info {
+    display: none;
+}
+.authorization-registration-disable {
     display: none;
 }
 .main-panel a {
@@ -335,24 +343,6 @@ img {
     font-size: 18px;
     line-height: 24px;
 }
-.company-description a{
-    font-family: "Cuprum", Arial, sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    color: var(--basic-white);
-    background-color: var(--basic-carmine-pink);
-    text-transform: uppercase;
-}
-.company-description button{
-    font-family: "Cuprum", Arial, sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    color: var(--basic-white);
-    background-color: var(--basic-carmine-pink);
-    text-transform: uppercase;
-}
 .main-nav {
     background-color: var(--basic-purple-blue);
     width: 940px;
@@ -369,10 +359,6 @@ img {
 .main-nav a:active {
     background-color: var(--basic-dark-blue);
     opacity: 0.5;
-}
-.promo-block:nth-last-child(2n) {
-   width: 300px;
-   min-height: 123px;
 }
 .promo-block h3:nth-last-child(2n) {
     font-family: "Cuprum", Arial, sans-serif;
@@ -396,7 +382,7 @@ img {
     line-height: 24px;
     color: var(--basic-white);
 }
-.promo-block a {
+.mat-link, .tool-link, .equ-link, .sal-link, .del-link {
     display: block;
     width: 135px;
     min-height: 38px;
@@ -407,18 +393,20 @@ img {
     text-decoration: none;
     color: var(--basic-white);
     opacity: 0.8;
-    background-color: #ffffff36;
+    background-color: rgba(255, 255, 255, 0.3);
 }
-.promo-block a:hover{
+.mat-link:hover, .tool-link:hover, .equ-link:hover, .sal-link:hover, .del-link:hover {
     background-color: var(--basic-silver);
-    opacity: 0.3;
 }
-.promo-block a:active{
+
+.mat-link:active, .tool-link:active, .equ-link:active, .sal-link:active, .del-link:active{
     background-color: var(--basic-white-aluminum);
-    opacity: 0.3;
 }
 .logo-footer {
+    width: 220px;
+    text-align: center;
     background-color: var(--basic-carmine-pink);
+    box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
 }
 .footer {
     font-family: "Cuprum", Arial, sans-serif;
@@ -429,13 +417,17 @@ img {
 .footer-services a:hover {
     text-decoration: underline;
 }
+.wrap-second-nav {
+    background-color: var(--basic-night-blue);
+}
 .second-footer-section {
+    display: flex;
+    justify-content: space-between;
     font-size: 16px;
     line-height: 18px;
 }
 .second-footer-section, .second-footer-section p {
     color: var(--basic-white);
-    background-color: var(--basic-night-blue);
 }
 .second-footer-section a {
     color: var(--basic-shiny-orange);
@@ -464,8 +456,17 @@ img {
 .footer-wrapper-main {
     background-color: var(--basic-purple-blue);
 }
+.wrap-main-nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 .footer-adress, .footer-adress a {
     color: var(--basic-white);
+}
+.footer-adress {
+    width: 321px;
+    display: inline-block;
 }
 .footer-nav a {
     color: var(--basic-white);
@@ -481,11 +482,21 @@ img {
     opacity: 0.5;
     text-decoration: none;
 }
+.footer-nav-services {
+    width: 480px;
+}
+.footer-nav {
+    width: 480px;
+    
+}
 .footer-services a{
     color: var(--basic-shiny-orange);
 }
 .store-basket {
     display: none;
+}
+.bread-crumbs {
+    display: flex;
 }
 .bread-crumbs a {
     font-family: "PT Sans", Arial, sans-serif;
@@ -495,6 +506,7 @@ img {
     text-transform: uppercase;
     color: var(--basic-black);
 }
+
 .filter, .sorting, .product-cards, .page-navigation {
     font-family: "PT Sans", Arial, sans-serif;
     font-weight: 400; 
@@ -543,6 +555,7 @@ img {
 .product-cards article {
     background-image: url(../img/label_new_products.jpg);
     background-repeat: no-repeat;
+    width: 220px;
 }
 .product-cards article:hover {
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
@@ -636,23 +649,41 @@ img {
     width: 220px;
     min-height: 145px;
 }
-.open-catalog-slider, .all-popular-manufacturers, .all-popular-products {
+.open-catalog-slider, 
+.all-popular-manufacturers, 
+.all-popular-products,
+.company-details,
+.feed-back-button {
     font-family: "Cuprum", Arial, sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
     color: var(--basic-white);
     text-transform: uppercase;
-    background-image: url(../img/red_button.jpg);
+    background-color: var(--basic-carmine-pink);
+    width: 192px;
+}
+.open-catalog-slider:active, 
+.all-popular-manufacturers:active, 
+.all-popular-products:active,
+.company-details:active,
+.feed-back-button:active {
+    background-color: var(--basic-dark-red);
 }
 .materials-cards {
     background-color: var(--basic-shiny-orange);
+    margin-left: 0;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 .tools-cards {
     background-color: var(--basic-twitter-color);
+    margin: 10px;
 }
 .equipment-cards {
     background-color: var(--basic-light-plum);
+    margin: 10px;
 }
 .sales-cards {
     background-color: var(--basic-grandma-apples);
@@ -661,8 +692,8 @@ img {
     background-color: var(--basic-shiny-orange);
 }
 .rotary-hammers-slider {
-    width: 620px;
-    min-height: 266px;
+    /* width: 620px;
+    min-height: 266px; */
     background-image: url(../img/background_punch_slider.jpg);
 }
 .drills-cards {
@@ -693,5 +724,119 @@ img {
   }
 .main-panel .container {
     display: flex;
-
+}
+.promo-block {
+    display: grid;
+    grid-template-columns: 310px 320px 320px;
+    grid-template-rows: 143px 143px 143px;
+}
+.drills-cards {
+    display: none;
+    margin: 10px;
+}
+.rotary-hammers-slider {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-end: 4;
+    grid-row-start: 2;
+    margin-left: 0;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.sales-cards {
+    grid-column-start: 3;
+    grid-row-end: 3;
+    margin: 10px;
+}
+.delivery-cards {
+    grid-column-start: 3;
+    grid-row-start: 3;
+    margin: 10px;
+}
+.wrapp-ppular {
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--basic-beige);
+}
+.wrapp-card {
+    display: flex;
+    justify-content: space-between;
+}
+.services {
+    background-color: var(--basic-periwinkle-craiola);
+}
+.services-list, .list-couriers {
+    list-style-type: none;
+}
+.services-delivery {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+    color: var(--basic-purple-blue);
+    text-transform: uppercase;
+}
+.service-description {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    width: 313px;
+}
+.wrap-services {
+    display: flex;
+}
+.list-couriers {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+} 
+.wrap-company-description {
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    grid-template-rows: 1fr 38px;
+}
+.wrap-content {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    grid-template-rows:  38px 1fr;
+}
+.filter {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.sorting {
+    
+    display: flex;
+}
+.product-cards {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    display: flex;
+    flex-wrap: wrap;
+}
+.page-navigation {
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+.sorting-button {
+    width: 11px;
+    height: 10px;
+}
+.ul-page-nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style-type: none;
+    min-height: inherit;
+    padding: 0;
+}
+.ul-page-nav li {
+    margin-right: 10px;
+}
+.about-rotary {
+    background-color: var(--basic-periwinkle-craiola);
 }
