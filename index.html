@@ -94,8 +94,10 @@
         <article class="rotary-hammers-slider">
           <h3 class="slider-name">Перфораторы</h3>
           <p class="slider-info">Настоящие мужские игрушки</p>
-          <button class="slider-button" type="button" aria-label="Кнопка пролистывая слайдера влево"><</button>
-          <button class="slider-button" type="button" aria-label="Кнопка пролистывая слайдера вправо">></button>
+          <div>
+            <button class="slider-button-left" type="button" aria-label="Кнопка пролистывая слайдера влево"></button>
+            <button class="slider-button-right" type="button" aria-label="Кнопка пролистывая слайдера вправо"></button>
+          </div>
           <a class="open-catalog-slider" href="catalog.html">Открыть каталог</a>
           <!-- <span>радио точка</span> -->
           <!-- <span>радио точка</span> -->
@@ -123,8 +125,8 @@
               <button class="button-buy">Купить</button>
               <button class="to-bookmarks">В закладки</button>
             </div>
-            <p>32500 Р.</p>
-            <p>25500 Р.</p>
+            <p class="old-price">32500 Р.</p>
+            <p class="new-price">25500 Р.</p>
           </article>
           <article>
             <h3>Перфоратор Bosch bfg 3000</h3>
@@ -133,8 +135,8 @@
               <button class="button-buy">Купить</button>
               <button class="to-bookmarks">В закладки</button>
             </div>
-            <p>22500 Р.</p>
-            <p>15500 Р.</p>
+            <p class="old-price">22500 Р.</p>
+            <p class="new-price">15500 Р.</p>
           </article>
           <article>
             <h3>Перфоратор Bosch bfg 6000</h3>
@@ -143,8 +145,8 @@
               <button class="button-buy">Купить</button>
               <button class="to-bookmarks">В закладки</button>
             </div>
-            <p>30500 Р.</p>
-            <p>25500 Р.</p>
+            <p class="old-price">30500 Р.</p>
+            <p class="new-price">25500 Р.</p>
           </article>
           <article>
             <h3>Перфоратор Bosch bfg 2000</h3>
@@ -154,7 +156,7 @@
               <button class="to-bookmarks">В закладки</button>
             </div>
             <!-- <p>12500 Р.</p> -->
-            <p>12500 Р.</p>
+            <p class="new-price">12500 Р.</p>
           </article>
         </div>
       </section>
@@ -210,7 +212,7 @@
               <li><p>Гарантия</p></li>
               <li><p>Кредит</p></li>
             </ul>
-            <section>
+            <section class="services-delivery-section">
               <h3 class="services-delivery">Доставка</h3>
               <p class="service-description">
                 Мы с удовольствием доставим ваш товар прямо<br> 
@@ -290,9 +292,9 @@
         <section class="second-footer-section container">
           <p class="copyright-company">© 2010–2019 Компания «Техномарт»<br>Все права защищены</p>
           <ul class="social-icons ul-style">
-            <li><a class="vk-link" href="#">Вконтакте</a></li>
-            <li><a class="fb-link" href="#">Фейсбук</a></li>
-            <li><a class="inst-link" href="#">Инстаграм</a></li>
+            <li><a class="vk-link" href="#" aria-label="Мы в Вконтакте"></a></li>
+            <li><a class="fb-link" href="#" aria-label="Мы в Фейсбук"></a></li>
+            <li><a class="inst-link" href="#" aria-label="Мы в Вконтакте"></a></li>
           </ul>
           <p class="feedback-info">Обратная связь:<br><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
           <p class="developed-by">Разработано —<br><a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>

@@ -10,7 +10,7 @@
   <header class="main-header">
     <section class="main-panel">
       <div class="container"> 
-        <a class="head-logo" href="index.html"><img src="img/logo.svg" alt="Логотип магазина Техномарт"></a>
+        <a class="head-logo" href="#"><img src="img/logo.svg" alt="Логотип магазина Техномарт"></a>
         <h2 class="visually-hidden">Панель пользователя</h2>
         <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
           <label  class="search-field" for="search" id="search">
@@ -37,13 +37,13 @@
             <button class="registration" type="button">Регистрация</button>
           </div>
           <div class="account-info-on">
-            <a class="user-panel" href="blank.html">
-              <img src="img/icon_user.png" alt="Иконка-кнопка личного кабинета пользователя">
+            <div class="wrap-accout-info">
+              <a class="user-panel-login" href="blank.html" aria-label="Кнопка перехода к профилю">
               Равшан Джамшутович
-            </a>
-            <a class="user-panel" href="blank.html">
-              <img src="img/icon_logout.png" alt="Иконка-кнопка для выхода из личного кабинета">
-            </a>
+              </a>
+              <a class="user-panel-logout" href="blank.html" aria-label="Кнопка дефвторизации">
+              </a>
+            </div>
             <div class="wrapper-account-panel">
               <a class="my-orders" href="blank.html">Мои заказы</a>
               <a class="personal-area" href="blank.html">Личный кабинет</a>
@@ -72,7 +72,7 @@
       <h1>Перфораторы</h1>
       <section class="bread-crumbs">
       <h2 class="visually-hidden">Меню "хлебные крошки"</h2>
-      <ul class="ul-style">
+      <ul class="ul-style list-link-crumbs">
         <li><a href="catalog.html">Каталог</a></li>
         <li><a href="blank.html">Инструмент</a></li>
         <li><a href="catalog.html">Перфораторы</a></li>
@@ -84,7 +84,7 @@
             <form action="https://echo.htmlacademy.ru/" method="post">
               <fieldset>
                 <legend>Цена</legend>
-                <label >
+                <label>
                   <p class="visually-hidden">От:</p>
                   <input class="price-min input-background" type="text" name="price_min" aria-label="Цена минимальная" value="0"></input> <!--цена мин-->
                 </label>
@@ -96,53 +96,39 @@
               </fieldset>
               <fieldset>
                 <legend>Производители:</legend>
-                <ul class="ul-style">
+                <ul class="ul-style list-manufacturers">
                   <li>
-                    <label>
-                      <input class="input-background" type="checkbox" name="Bosch" checked>
-                        Bosch
-                    </label>  
+                    <input class="input-background visually-hidden" id ="Bosch" type="checkbox" name="Bosch" checked>
+                    <label class="label-checkbox" for="Bosch">Bosch</label>
                   </li>
                   <li>
-                    <label>
-                      <input class="input-background" type="checkbox" name="Интерскол">
-                      Интерскол
-                    </label>
+                    <input class="input-background visually-hidden" id ="interskol" type="checkbox" name="Интерскол">
+                    <label class="label-checkbox" for="interskol">Интерскол</label>
                   </li>
                   <li>
-                    <label>
-                      <input class="input-background" type="checkbox" name="Makita" checked>
-                      Makita
-                    </label>
+                    <input class="input-background visually-hidden" id ="makita" type="checkbox" name="Makita" checked>
+                    <label class="label-checkbox" for="makita">Makita</label>
                   </li>
                   <li>
-                    <label>
-                      <input class="input-background" type="checkbox" name="Dewalt">
-                      Dewalt
-                    </label>
+                    <input class="input-background visually-hidden" id ="dewalt" type="checkbox" name="Dewalt" checked>
+                    <label class="label-checkbox" for="dewalt">Dewalt</label>
                   </li>
                   <li>
-                    <label>
-                      <input class="input-background" type="checkbox" name="Hitachi">
-                      Hitachi
-                    </label>
+                    <input class="input-background visually-hidden" id ="hitachi" type="checkbox" name="Hitachi" checked>
+                    <label class="label-checkbox" for="hitachi">Hitachi</label>
                   </li>
                 </ul>
               </fieldset>
               <fieldset>
                 <legend>Питание:</legend>
-                <ul class="ul-style">
+                <ul class="ul-style list-manufacturers">
                   <li>
-                    <label>
-                      <input class="input-background" type="radio" name="power_supply" value="rechargeable" >
-                      Аккумуляторные
-                    </label>
+                    <input class="input-background visually-hidden" id ="accum" type="radio" name="power_supply" value="rechargeable" checked>
+                    <label class="label-radio" for="accum">Аккумуляторные</label>
                   </li>
                   <li>
-                    <label>
-                      <input class="input-background" type="radio" name="power_supply" value="mains_power">
-                      Сетевые
-                    </label>
+                    <input class="input-background visually-hidden" id ="not-accum" type="radio" name="power_supply" value="mains_power">
+                    <label class="label-radio" for="not-accum">Сетевые</label>
                   </li>
                 </ul>
               </fieldset>
@@ -154,8 +140,16 @@
           <p>По цене</p>
           <p>По типу</p>
           <p>По функционалу</p>
-          <button class="sorting-button" type="button" aria-label="Кнопка сортировки вверх">up</button>
-          <button class="sorting-button" type="button" aria-label="Кнопка сортировки вниз" >down</button>
+          <button class="sorting-button-up" type="button" aria-label="Кнопка сортировки вверх">
+            <svg class="sorting-icon" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+              <path fill="#231F20" d="M5.5 10L0 0h11"/>
+            </svg>
+          </button>
+          <button class="sorting-button-dwn" type="button" aria-label="Кнопка сортировки вниз" >
+            <svg  class="sorting-icon" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+              <path fill="#231F20" d="M5.5 10L0 0h11"/>
+            </svg>
+          </button>
         </section>
         <section class="product-cards">
           <h2 class="visually-hidden">Карточки товаров</h2>
