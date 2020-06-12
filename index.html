@@ -15,6 +15,7 @@
           <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
             <label  class="search-field" for="search" id="search">
               <input class="input-background" type="search" name="search" id="search" aria-labelledby="search" value="Поиск:">
+              <svg class="icon-search" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
             </label>
           </form>
           <a class="user-bookmarks" href="blank.html">Закладки</a>
@@ -94,15 +95,21 @@
           <a class="del-link" href="blank.html">Бесплатно</a>
         </article>
         <article class="rotary-hammers-slider">
-          <h3 class="slider-name">Перфораторы</h3>
-          <p class="slider-info">Настоящие мужские игрушки</p>
-          <div>
+          <div class="wrap-head-slider">
+            <h3 class="slider-name">Перфораторы</h3>
+            <p class="slider-info">Настоящие мужские игрушки</p>
+          </div>
+          <div class="wrap-slider-button">
             <button class="slider-button-left" type="button" aria-label="Кнопка пролистывая слайдера влево"></button>
             <button class="slider-button-right" type="button" aria-label="Кнопка пролистывая слайдера вправо"></button>
           </div>
           <a class="open-catalog-slider" href="catalog.html">Открыть каталог</a>
-          <!-- <span>радио точка</span> -->
-          <!-- <span>радио точка</span> -->
+          <div class="wrap-slider-radio">
+            <input class="visually-hidden" id="slider-radio-1" type="radio" name="slider">
+            <label for="slider-radio-1"></label>
+            <input class="visually-hidden" id="slider-radio-2" type="radio" name="slider" checked>
+            <label for="slider-radio-2"></label>
+          </div>
         </article>
         <article class="drills-cards">
           <h3 class="slider-name">Дрели</h3>
@@ -121,44 +128,60 @@
         </div>
         <div class="wrapp-card">
           <article>
-            <h3>Перфоратор Bosch bfg 9000</h3>
-            <img src="img/bosch_9000.jpg" width="184px" alt="Фото инструмента - Перфоратор Bosch bfg 9000">
+            <h3>Перфоратор <span>Bosch <br> bfg</span> 9000</h3>
+            <div class="wrap-img">
+              <img src="img/bosch_9000.jpg" width="184px" alt="Фото инструмента - Перфоратор Bosch bfg 9000">
+            </div>
             <div class="buy-popup">
               <button class="button-buy">Купить</button>
               <button class="to-bookmarks">В закладки</button>
             </div>
-            <p class="old-price">32500 Р.</p>
-            <p class="new-price">25500 Р.</p>
+            <div class="wrap-p-price">
+              <p class="old-price">32500 Р.</p>
+              <p class="new-price">25500 Р.</p>
+            </div>
+          </article>
+          <article class="new-mark">
+            <h3>Перфоратор <span>Bosch <br> bfg</span>  3000</h3>
+            <div class="wrap-img">
+              <img src="img\bosch_3000.jpg" width="127px" alt="Фото инструмента - Перфоратор Bosch bfg 3000">
+            </div>
+            <div class="buy-popup">
+              <button class="button-buy">Купить</button>
+              <button class="to-bookmarks">В закладки</button>
+            </div>
+            <div class="wrap-p-price">
+              <p class="old-price">22500 Р.</p>
+              <p class="new-price">15500 Р.</p>
+            </div>
           </article>
           <article>
-            <h3>Перфоратор Bosch bfg 3000</h3>
-            <img src="img\bosch_3000.jpg" width="127px" alt="Фото инструмента - Перфоратор Bosch bfg 3000">
+            <h3>Перфоратор <span>Bosch <br> bfg</span> 6000</h3>
+            <div class="wrap-img">
+              <img src="img\bosch_6000.jpg" width="144px" alt="Фото инструмента - Перфоратор Bosch bfg 6000">
+            </div>
             <div class="buy-popup">
               <button class="button-buy">Купить</button>
               <button class="to-bookmarks">В закладки</button>
             </div>
-            <p class="old-price">22500 Р.</p>
-            <p class="new-price">15500 Р.</p>
+            <div class="wrap-p-price">
+              <p class="old-price">30500 Р.</p>
+              <p class="new-price">25500 Р.</p>
+            </div>
           </article>
-          <article>
-            <h3>Перфоратор Bosch bfg 6000</h3>
-            <img src="img\bosch_6000.jpg" width="144px" alt="Фото инструмента - Перфоратор Bosch bfg 6000">
+          <article class="new-mark">
+            <h3>Перфоратор <span>Bosch <br> bfg</span> 2000</h3>
+            <div class="wrap-img">
+              <img src="img\bosch_2000.jpg" width="127px" alt="Фото инструмента - Перфоратор Bosch bfg 2000">
+            </div>
             <div class="buy-popup">
               <button class="button-buy">Купить</button>
               <button class="to-bookmarks">В закладки</button>
             </div>
-            <p class="old-price">30500 Р.</p>
-            <p class="new-price">25500 Р.</p>
-          </article>
-          <article>
-            <h3>Перфоратор Bosch bfg 2000</h3>
-            <img src="img\bosch_2000.jpg" width="127px" alt="Фото инструмента - Перфоратор Bosch bfg 2000">
-            <div class="buy-popup">
-              <button class="button-buy">Купить</button>
-              <button class="to-bookmarks">В закладки</button>
+            <div class="wrap-p-price">
+              <p></p>
+              <p class="new-price">12500 Р.</p>
             </div>
-            <!-- <p>12500 Р.</p> -->
-            <p class="new-price">12500 Р.</p>
           </article>
         </div>
       </section>
@@ -210,9 +233,9 @@
           </p>
           <div class="wrap-services">
             <ul class="services-list">
-              <li><p>Доставка</p></li>
-              <li><p>Гарантия</p></li>
-              <li><p>Кредит</p></li>
+              <li class="services-list-base services-list-active"><p>Доставка</p></li>
+              <li class="services-list-base"><p>Гарантия</p></li>
+              <li class="services-list-base"><p>Кредит</p></li>
             </ul>
             <section class="services-delivery-section">
               <h3 class="services-delivery h-color">Доставка</h3>
