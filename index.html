@@ -18,8 +18,8 @@
               <svg class="icon-search" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
             </label>
           </form>
-          <a class="user-bookmarks" href="blank.html">Закладки</a>
-          <a class="user-store-basket" href="blank.html">Корзина</a>
+          <a class="user-bookmarks" href="blank.html">Закладки: 0</a>
+          <a class="user-store-basket" href="blank.html">Корзина: 0</a>
           <a class="checkout-main-panel" href="#">Оформить заказ</a>
         </div>  
       </section>
@@ -34,7 +34,7 @@
             </div>
             <p class="adress h-color">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </div>
-          <div>
+          <div class="wrap-log-info">
             <div class="authorization-registration-active">
               <button class="log-in" type="button">Войти</button>
               <button class="registration" type="button">Регистрация</button>
@@ -121,8 +121,8 @@
           <!-- <span>радио точка</span> -->
         </article>
       </section>
-      <section class="product-cards container">
-        <div class="wrapp-ppular">
+      <section class="product-cards product-cards-catalog container">
+        <div class="wrapp-ppular wrap-cards-catalog">
           <h2 class="sections-headline h-color">Популярные товары:</h2>
           <a class="all-popular-products" href="catalog.html">Все популярные товары</a>
         </div>
@@ -138,7 +138,7 @@
             </div>
             <div class="wrap-p-price">
               <p class="old-price">32500 Р.</p>
-              <p class="new-price">25500 Р.</p>
+              <a href="#" class="new-price">25500 Р.</a>
             </div>
           </article>
           <article class="new-mark">
@@ -227,7 +227,7 @@
       </section>
       <section class="services">
         <div class="container">
-          <h2 class="sections-headline">Сервисы</h2>
+          <h2 class="sections-headline sections-headline-services">Сервисы</h2>
           <p>Хороший интернет-магазин отличается от плохого не только ценами!
             Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
           </p>
@@ -258,11 +258,11 @@
       </section>
       <div class="wrap-company-description container">
         <section class="company-description">
-          <h2 class="sections-headline">Компания «Техномарт»</h2>
+          <h2 class="sections-headline sections-headline-description">Компания «Техномарт»</h2>
           <p class="service-description">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и 
             строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
           </p> 
-          <p class="service-description">Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+          <p class="service-description service-description-second">Мы можем доставить ваш товар в самые отдаленные точки России!<br>
             Техномарт работает со многими транспортными компаниями:
           </p>
           <ul class="list-couriers">
@@ -273,11 +273,11 @@
           <a class="company-details" href="blank.html">Подробнее о компании</a>
         </section>
         <section class="company-contacts">
-          <h2 class="sections-headline">Контакты</h2>
+          <h2 class="sections-headline sections-headline-description">Контакты</h2>
           <p>Вы можете забрать товар сами,<br> 
             заехав в наш офис:
           </p>
-          <a href="#"><img src="img\map.jpg" alt="Изображение магазина на карте города"></a>
+          <a class="map-contacts" href="#"><img src="img\map.jpg" alt="Изображение магазина на карте города"></a>
           <button class="feed-back-button" type="button">Заблудились? Напишите нам!</button> 
         </section>
       </div>
