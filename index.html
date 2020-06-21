@@ -106,19 +106,29 @@
           <a class="open-catalog-slider" href="catalog.html">Открыть каталог</a>
           <div class="wrap-slider-radio">
             <input class="visually-hidden" id="slider-radio-1" type="radio" name="slider">
-            <label for="slider-radio-1"></label>
+            <label class="slider-radio-1" for="slider-radio-1"></label>
             <input class="visually-hidden" id="slider-radio-2" type="radio" name="slider" checked>
-            <label for="slider-radio-2"></label>
+            <label class="slider-radio-2" for="slider-radio-2"></label>
           </div>
         </article>
         <article class="drills-cards">
-          <h3 class="slider-name">Дрели</h3>
-          <p class="slider-info">Соседям на радость</p>
-          <button class="slider-button" type="button" aria-label="Кнопка пролистывая слайдера влево"><</button>
-          <button class="slider-button" type="button" aria-label="Кнопка пролистывая слайдера вправо">></button>
+          <div class="wrap-head-slider">
+            <h3 class="slider-name">Дрели</h3>
+            <p class="slider-info">Соседям на радость</p>
+          </div>
+          <div class="wrap-slider-button">
+            <button class="slider-button-left" type="button" aria-label="Кнопка пролистывая слайдера влево"></button>
+            <button class="slider-button-right" type="button" aria-label="Кнопка пролистывая слайдера вправо"></button>
+          </div>
           <a class="open-catalog-slider" href="catalog.html">Открыть каталог</a>
-          <!-- <span>радио точка</span> -->
-          <!-- <span>радио точка</span> -->
+          <div class="wrap-slider-radio">
+            <form action="">
+              <input class="visually-hidden" id="slider-radio-1" type="radio" name="slider" checked>
+              <label class="slider-radio-1" for="slider-radio-1"></label>
+              <input class="visually-hidden" id="slider-radio-2" type="radio" name="slider">
+              <label class="slider-radio-2" for="slider-radio-2"></label>
+          </form>
+          </div>
         </article>
       </section>
       <section class="product-cards product-cards-catalog container">
@@ -237,13 +247,30 @@
               <li class="services-list-base"><p>Гарантия</p></li>
               <li class="services-list-base"><p>Кредит</p></li>
             </ul>
-            <section class="services-delivery-section">
-              <h3 class="services-delivery h-color">Доставка</h3>
+            <section class="services-delivery-section services-section">
+              <h3 class="services-head h-color">Доставка</h3>
               <p class="service-description">
                 Мы с удовольствием доставим ваш товар прямо<br> 
                 к вашему подъезду совершенно бесплатно! <br>
                 Ведь мы неплохо заработаем, <br> 
                 поднимая его на ваш этаж!</p>
+            </section>
+            <section class="services-guarant-section services-section">
+              <h3 class="services-head h-color">Гарантия</h3>
+              <p class="service-description">
+                Если купленный у нас товар поломается или заискрит, <br>
+                а также в случае пожара, спровоцированного его <br> возгоранием, 
+                вы всегда можете быть уверены в нашей<br>гарантии. 
+                Мы обменяем сгоревший товар на новый. <br>
+                Дом уж восстановите как-нибудь сами.</p>
+            </section>
+            <section class="services-credit-section services-section">
+              <h3 class="services-head h-color">Кредит</h3>
+              <p class="service-description">
+                Залезть в долговую яму стало проще! <br>
+                Кредитные консультанты придут вам на помощь.
+              </p>
+              <a class="request-link" href="#">Отправить заявку</a>
             </section>
           </div>
           <section class="visually-hidden">
@@ -326,36 +353,52 @@
         </section>
       </div>
     </footer>
-    <section class="feedback-popup">
-      <h2 class="visually-hidden">Напишите нам</h2>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label>
-          Ваше имя:
-          <input class="input-background" type="text" name="name" placeholder="Имя Фамилия"> 
-          </label>
-        </p>
-        <p>
-          <label>
-          Ваша e-mail:
-          <input class="input-background" type="e-mail" name="e-mail" placeholder="email@example.com">
-          </label>
-        </p>
-        <p>
-          <label>
-          Текс письма:
-          <input class="input-background" type="text" name="content_letter" placeholder="В свободной форме">
-          </label>
-        </p>
-        <button class="feed-back-submit" type="submit">Отправить</button>
-      </form>
-      <button class="feed-back-close" type="button" aria-label="Закрыть окно обратной связи">Закрыть</button>
+    <section class="feedback-popup hide">
+      <div class="wrap-feedback-popup">
+        <h2 class="visually-hidden">Напишите нам</h2>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <div class="wrap-input-name">
+            <label for="your-name">Ваше имя:</label>
+            <input class="input-name" type="text" name="name" id="your-name" placeholder="Имя Фамилия"> 
+          </div>
+          <div class="wrap-input-mail">
+            <label for="your-mail"> Ваш e-mail:</label>
+            <input class="input-mail" type="e-mail" name="e-mail" id="your-mail" placeholder="email@example.com">
+          </div>
+          <div class="wrap-input-text">
+            <label for="your-message">Текст письма:</label>
+            <textarea class="input-text" name="content_letter" id="your-message" placeholder="В свободной форме"></textarea>
+          </div>
+          <div class="wrap-feed-back">
+            <button class="feed-back-submit" type="submit">Отправить</button>
+          </div>
+        </form>
+        <button class="feed-back-close" type="button" aria-label="Закрыть окно обратной связи"></button>
+      </div>
     </section>
-    <section class="map-widget"> 
-      <h2 class="visually-hidden">Виджет карты города</h2>
-      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A12307483c981de1bff2ca94339040183ba5f9de282b3f0b2ccdae7b0bd9d4814&amp;source=constructor" width="500" height="400" frameborder="0">
-      </iframe>
-      <button class="map-close" type="button" aria-label="Закрыть окна карты">Закрыть</button>
+    <section class="map-widget hide">
+      <div class="wrap-feedback-popup"></div>
+        <h2 class="visually-hidden">Виджет карты города</h2>
+        <iframe src="https://yandex.ru/map-widget/v1/?um=
+        constructor%3A12307483c981de1bff2ca94339040183ba5f9de
+        282b3f0b2ccdae7b0bd9d4814&amp;source=constructor" width="943" height="449"
+        allowfullscreen title="Офис компании по адресу ул. Большая 
+        Конюшенная 19, Санкт-Петербург">
+        </iframe>
+        <button class="map-close" type="button" aria-label="Закрыть окна карты"></button>
+      </div>
     </section>
+    <section class="store-basket hide">
+      <div class="wrap-store-basket">
+        <h2 class="visually-hidden">Корзина</h2>
+        <p>Товар добавлен в корзину!</p>
+        <div class="wrap-store-button">
+          <a class="compl-store" href="blank.html">Оформить заказ</a>
+          <button class="continius-order" type="button">Продолжить покупки</button>
+        </div>
+        <button class="order-close" type="button" aria-label="Закрыть окно корзины"></button>
+      </div>
+    </section>
+    <script src="js/script.js"></script>
   </body>
 </html>
