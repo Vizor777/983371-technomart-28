@@ -25,6 +25,7 @@
 	--basic-light-plum: #DC91D8;
 	--basic-shiny-orange: #FFBF47;
 	--basic-pale-yellow: #FFDA96;
+	--basic-light-yellow:#FFC047;
 	--basic-gray-brown: #444444;
 	--basic-gainsborough: #E5E5E5;
 	--basic-pearl-white: #F7F3EC;
@@ -133,6 +134,13 @@ img {
 	background-color: var(--basic-pearl-white);
 }
 
+.log-in:active,
+.registration:active {
+	color: var(--basic-silver);
+	outline: none;
+}
+
+
 .log-in,
 .registration,
 .button-buy,
@@ -172,7 +180,7 @@ img {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	width: 220px;
-	border: 1px solid var(--basic-carmine-pink);
+	border: 1px solid var(--basic-gainsborough);
 	margin-top: 12px;
 }
 
@@ -234,10 +242,6 @@ img {
 	margin-right: 10px;
 }
 
-.log-in:focus, .registration:focus {
-	outline: none;
-}
-
 .log-in:hover,
 .registration:hover {
 	color: var(--basic-carmine-pink);
@@ -245,11 +249,6 @@ img {
 
 .log-in:hover::before {
 	opacity: 1;
-}
-
-.log-in:active,
-.registration:active {
-	color: var(--basic-silver);
 }
 
 .log-in:active::before {
@@ -961,7 +960,7 @@ img {
 }
 
 .second-footer-section a {
-	color: var(--basic-shiny-orange);
+	color: var(--basic-pale-orange-yellow);
 }
 
 .social-icons {
@@ -1080,7 +1079,7 @@ img {
 }
 
 .footer-services a {
-	color: var(--basic-shiny-orange);
+	color: var(--basic-pale-orange-yellow);
 }
 
 .store-basket {
@@ -1134,18 +1133,14 @@ img {
 }
 
 .bread-crumbs ul {
-	padding-left: 25px;
 	margin-top: 21px;
 }
 
-.bread-crumbs::before {
-	content: "";
-	position: absolute;
+.index-link-crumbs {
+	display: block;
 	width: 14px;
 	height: 12px;
 	background-image: url(../img/icon_home.jpg);
-	top: 24px;
-	left: 0;
 }
 
 .bread-crumbs a {
@@ -1157,13 +1152,20 @@ img {
 	color: var(--basic-black);
 }
 
-.list-link-crumbs li {
+.list-link-crumbs li:first-child {
+	display: inline-block;
+	vertical-align: middle;
+	width: 14px;
+	height: 12px;
+}
+
+.list-link-crumbs li:not(:first-child) {
 	position: relative;
 	padding-left: 13px;
 	padding-right: 10px;
 }
 
-.list-link-crumbs li::before {
+.list-link-crumbs li:not(:first-child)::before {
 	content: "";
 	position: absolute;
 	background-image: url(../img/icon_right_small.jpg);
@@ -1535,7 +1537,7 @@ img {
 }
 
 .delivery-cards {
-	background-color: var(--basic-shiny-orange);
+	background-color: var(--basic-light-yellow);
 	background-image: url(../img/icon_delivery.png);
 	background-repeat: no-repeat;
 	background-position: 191px;
@@ -1679,7 +1681,7 @@ img {
 
 .services p {
 	width: 394px;
-	font-family: "PT Sans", Arial, sans-serif;
+	font-family: "Cuprum", Arial, sans-serif;
 	font-weight: 400;
 	font-size: 13px;
 	line-height: 24px;
@@ -1691,14 +1693,19 @@ img {
 	list-style-type: none;
 }
 
-.services-list-base{
+.services-list-base {
 	color: var(--basic-white);
 	background-color: var(--basic-purple-blue);
+	box-shadow: 0px 1px 0px #293449, 
+	inset 0px 1px 0px #405069;
+	margin-bottom: 1px;
 }
 
 .services-list-active {
 	color: var(--basic-purple-blue);
 	background-color: var(--basic-white);
+	box-shadow: 0px 1px 0px var(--basic-white), 
+	inset 0px 1px 0px var(--basic-white);
 }
 
 .services-list{
@@ -1739,6 +1746,8 @@ img {
 .services-list li:hover {
 	color: var(--basic-white);
 	background-color: var(--basic-night-blue);
+	box-shadow: 0px 1px 0px #293449, 
+	inset 0px 1px 0px #405069;
 }
 
 .list-couriers li{
@@ -1907,7 +1916,7 @@ img {
 }
 
 .about-rotary {
-	margin-bottom: 69px;
+	padding-bottom: 69px;
 }
 
 .service-description-second {
@@ -2060,29 +2069,28 @@ img {
 }
 
 .list-manufacturers input[type=radio]:focus+label::before {
-	outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
+	outline: 5px auto var(--basic-black);
 }
 
 .list-manufacturers input[type=radio]+label::before {
 	display: inline-block;
-  width: 26px;
-  height: 26px;
-  background-repeat: no-repeat;
-  content: " ";
-  vertical-align: middle;
-  position: absolute;
-  left: 0;
-  top: 0;
+	width: 26px;
+	height: 26px;
+	background-repeat: no-repeat;
+	content: " ";
+	vertical-align: middle;
+	position: absolute;
+	left: 0;
+	top: 0;
 	background-image: url(../img/radio_off.svg);
 }
 
 .list-manufacturers input[type=radio]:disabled+label::before {
-	background-image: url(../img/radio_off.svg);
+	background-image: url(../img/radio_off_disable.png);
 }
 
 .list-manufacturers input[type=radio]:disabled:checked+label::before {
-	background-image: url(../img/radio_on.svg);
+	background-image: url(../img/radio_on_disable.png);
 }
 
 .list-manufacturers input[type=radio]:checked+label::before {
