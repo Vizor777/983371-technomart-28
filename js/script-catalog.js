@@ -3,7 +3,7 @@ var storeBasket = document.querySelector(".store-basket");
 var orderClose = document.querySelector(".order-close");
 
 function myFunction() {
-	for (let i = 0; i < buttonBuy.length; i++) {
+	for (var i = 0; i < buttonBuy.length; i++) {
 		buttonBuy[i].addEventListener("click", function (evt) {
 			evt.preventDefault();
 			storeBasket.classList.remove("hide");

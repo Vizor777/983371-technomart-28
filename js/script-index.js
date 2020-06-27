@@ -35,7 +35,7 @@ form.addEventListener("submit", function (evt) {
 });
 
 function myFunction() {
-	for (let i = 0; i < buttonBuy.length; i++) {
+	for (var i = 0; i < buttonBuy.length; i++) {
 		buttonBuy[i].addEventListener("click", function (evt) {
 			evt.preventDefault();
 			storeBasket.classList.remove("hide");
