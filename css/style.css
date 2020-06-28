@@ -600,13 +600,12 @@ img {
 }
 
 .user-bookmarks {
-	width: 83px;
 	min-height: 24px;
 	position: relative;
 	padding-top: 10px;
 	padding-bottom: 8px;
-	padding-left: 43px;
-	padding-right: 24px;
+	padding-left: 30px;
+	padding-right: 37px;
 }
 
 .user-bookmarks::before {
@@ -615,7 +614,7 @@ img {
 	height: 16px;
 	position: absolute;
 	top: 13px;
-	left: 19px;
+	left: 6px;
 	background-image: url(../img/shape.png);
 	background-repeat: no-repeat;
 	opacity: 0.3;
@@ -637,7 +636,7 @@ img {
 	position: relative;
 	padding-top: 10px;
 	padding-bottom: 8px;
-	padding-left: 49px;
+	padding-left: 36px;
 	padding-right: 20px;
 }
 
@@ -648,7 +647,7 @@ img {
 	height: 18px;
 	position: absolute;
 	top: 13px;
-	left: 25px;
+	left: 13px;
 	background-image: url(../img/inv.svg);
 	background-repeat: no-repeat;
 	opacity: 0.3;
@@ -735,6 +734,7 @@ input[type="search"]::-webkit-input-placeholder { color: var(--basic-white); }
 .search-form {
 	position: relative;
 	margin-left: 220px;
+	margin-right: 13px;
 }
 
 .search-field input {
